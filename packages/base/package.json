@@ -1,0 +1,18 @@
+{
+  "name": "@hideoo/eslint-config-base",
+  "version": "0.0.1",
+  "author": "HiDeoo",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-unicorn": "42.0.0"
+  },
+  "devDependencies": {
+    "eslint": "8.18.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  }
+}

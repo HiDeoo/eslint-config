@@ -1,0 +1,13 @@
+{
+  "name": "@hideoo/eslint-config",
+  "version": "0.0.1",
+  "author": "HiDeoo",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@hideoo/eslint-config-react": "workspace:*"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  }
+}
