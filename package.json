@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint . --max-warnings=0",
+    "release": "pnpm -r publish --access public",
     "prepare": "husky install"
   },
   "devDependencies": {
