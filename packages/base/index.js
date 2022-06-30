@@ -57,6 +57,7 @@ module.exports = {
     'import/first': 'error',
     'import/no-anonymous-default-export': 'error',
     'import/no-mutable-exports': 'error',
+    'import/no-unresolved': 'off',
     'import/order': ['warn', { 'newlines-between': 'always', alphabetize: { order: 'asc', caseInsensitive: true } }],
 
     'unicorn/filename-case': ['error', { cases: { camelCase: true, kebabCase: true, pascalCase: true } }],
