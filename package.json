@@ -1,5 +1,7 @@
 {
   "name": "@hideoo/eslint-config-workspace",
+  "description": "HiDeoo's ESLint configuration",
+  "homepage": "https://github.com/HiDeoo/eslint-config",
   "version": "0.0.1",
   "author": "HiDeoo",
   "private": true,
@@ -16,8 +18,24 @@
     "lint-staged": "13.0.3",
     "prettier": "2.7.1"
   },
+  "keywords": [
+    "eslint",
+    "config",
+    "eslint-config",
+    "base",
+    "react",
+    "typescript"
+  ],
+  "bugs": {
+    "url": "https://github.com/HiDeoo/eslint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HiDeoo/eslint-config"
+  },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown --cache"
   },
+  "packageManager": "pnpm@7.4.0",
   "prettier": "@hideoo/prettier-config"
 }

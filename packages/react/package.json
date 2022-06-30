@@ -1,5 +1,7 @@
 {
   "name": "@hideoo/eslint-config-react",
+  "description": "HiDeoo's ESLint React configuration",
+  "homepage": "https://github.com/HiDeoo/eslint-config",
   "version": "0.0.1",
   "author": "HiDeoo",
   "main": "index.js",
@@ -16,5 +18,18 @@
   },
   "peerDependencies": {
     "eslint": ">=8.0.0"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "eslint-config",
+    "react"
+  ],
+  "bugs": {
+    "url": "https://github.com/HiDeoo/eslint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HiDeoo/eslint-config"
   }
 }
