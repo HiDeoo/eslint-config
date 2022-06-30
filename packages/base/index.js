@@ -20,6 +20,18 @@ module.exports = {
     {
       files: ['*.cjs', '*.mjs'],
     },
+    {
+      files: ['*.js', '*.cjs'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+    {
+      files: ['cli.*', 'scripts/**/*.*'],
+      rules: {
+        'no-console': 'off',
+      },
+    },
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -28,16 +40,24 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    'array-callback-return': 'error',
+    eqeqeq: 'error',
+    'no-alert': 'warn',
+    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'no-use-before-define': ['error', { classes: false, functions: false, variables: true }],
+    'no-return-assign': 'error',
+    'no-var': 'error',
+    'prefer-arrow-callback': ['error', { allowNamedFunctions: false, allowUnboundThis: true }],
+    'prefer-const': ['error', { destructuring: 'any', ignoreReadBeforeAssign: true }],
+    'prefer-exponentiation-operator': 'error',
+    'prefer-rest-params': 'error',
+    'prefer-spread': 'error',
+    'prefer-template': 'error',
+
     'import/first': 'error',
     'import/no-anonymous-default-export': 'error',
     'import/no-mutable-exports': 'error',
-    'import/order': [
-      'warn',
-      {
-        'newlines-between': 'always',
-        alphabetize: { order: 'asc', caseInsensitive: true },
-      },
-    ],
+    'import/order': ['warn', { 'newlines-between': 'always', alphabetize: { order: 'asc', caseInsensitive: true } }],
 
     'unicorn/filename-case': ['error', { cases: { camelCase: true, kebabCase: true, pascalCase: true } }],
     'unicorn/no-null': 'off',
