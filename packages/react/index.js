@@ -10,4 +10,9 @@ module.exports = {
 
     'react/prop-types': 'off',
   },
+  settings: {
+    react: {
+      version: '18.0',
+    },
+  },
 }
