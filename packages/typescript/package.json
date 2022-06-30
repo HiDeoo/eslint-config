@@ -2,7 +2,7 @@
   "name": "@hideoo/eslint-config-typescript",
   "description": "HiDeoo's ESLint TypeScript configuration",
   "homepage": "https://github.com/HiDeoo/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "HiDeoo",
   "main": "index.js",
   "license": "MIT",
