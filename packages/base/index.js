@@ -5,6 +5,17 @@ module.exports = {
     es2022: true,
     node: true,
   },
+  ignorePatterns: [
+    '*.min.*',
+    '__snapshots__',
+    'coverage',
+    'dist',
+    'output',
+    'packages-lock.json',
+    'pnpm-lock.yaml',
+    'public',
+    'yarn.lock',
+  ],
   overrides: [
     {
       files: ['*.cjs', '*.mjs'],
