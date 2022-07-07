@@ -9,6 +9,7 @@ module.exports = {
   rules: {
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports', disallowTypeAnnotations: false }],
+    '@typescript-eslint/no-unused-vars': ['warn', { ignoreRestSiblings: true }],
     'no-dupe-class-members': 'off',
     '@typescript-eslint/no-dupe-class-members': 'error',
     'no-redeclare': 'off',
