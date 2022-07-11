@@ -23,10 +23,12 @@ importers:
       eslint: 8.18.0
       eslint-config-prettier: 8.5.0
       eslint-plugin-import: 2.26.0
+      eslint-plugin-no-only-tests: 2.6.0
       eslint-plugin-unicorn: 42.0.0
     dependencies:
       eslint-config-prettier: 8.5.0_eslint@8.18.0
       eslint-plugin-import: 2.26.0_eslint@8.18.0
+      eslint-plugin-no-only-tests: 2.6.0
       eslint-plugin-unicorn: 42.0.0_eslint@8.18.0
     devDependencies:
       eslint: 8.18.0
@@ -787,6 +789,11 @@ packages:
       language-tags: 1.0.5
       minimatch: 3.1.2
       semver: 6.3.0
+    dev: false
+
+  /eslint-plugin-no-only-tests/2.6.0:
+    resolution: {integrity: sha512-T9SmE/g6UV1uZo1oHAqOvL86XWl7Pl2EpRpnLI8g/bkJu+h7XBCB+1LnubRZ2CUQXj805vh4/CYZdnqtVaEo2Q==}
+    engines: {node: '>=4.0.0'}
     dev: false
 
   /eslint-plugin-react/7.30.1_eslint@8.18.0:

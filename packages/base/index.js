@@ -39,6 +39,7 @@ module.exports = {
     },
     sourceType: 'module',
   },
+  plugins: ['no-only-tests'],
   rules: {
     'array-callback-return': 'error',
     eqeqeq: 'error',
@@ -59,6 +60,8 @@ module.exports = {
     'import/no-mutable-exports': 'error',
     'import/no-unresolved': 'off',
     'import/order': ['warn', { 'newlines-between': 'always', alphabetize: { order: 'asc', caseInsensitive: true } }],
+
+    'no-only-tests/no-only-tests': 'warn',
 
     'unicorn/filename-case': ['error', { cases: { camelCase: true, kebabCase: true, pascalCase: true } }],
     'unicorn/no-null': 'off',
