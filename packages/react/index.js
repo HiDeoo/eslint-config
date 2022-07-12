@@ -7,6 +7,7 @@ module.exports = {
   ],
   rules: {
     'jsx-a11y/alt-text': ['warn', { elements: ['img'], img: ['Image', 'Img'] }],
+    'jsx-a11y/no-autofocus': ['error', { ignoreNonDOM: true }],
 
     'react/prop-types': 'off',
   },

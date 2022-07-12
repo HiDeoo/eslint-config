@@ -19,6 +19,10 @@ module.exports = {
       'error',
       { classes: false, functions: false, typedefs: false, variables: false },
     ],
+
+    // This breaks filtering with a type guard.
+    // https://github.com/microsoft/TypeScript/pull/10027/files
+    'unicorn/no-array-callback-reference': 'off',
   },
   settings: {
     'import/parsers': {

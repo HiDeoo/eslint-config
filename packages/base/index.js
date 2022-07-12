@@ -43,7 +43,6 @@ module.exports = {
   rules: {
     'array-callback-return': 'error',
     eqeqeq: 'error',
-    'no-alert': 'warn',
     'no-console': ['error', { allow: ['warn', 'error'] }],
     'no-use-before-define': ['error', { classes: false, functions: false, variables: false }],
     'no-return-assign': 'error',
