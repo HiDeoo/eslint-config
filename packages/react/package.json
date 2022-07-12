@@ -2,7 +2,7 @@
   "name": "@hideoo/eslint-config-react",
   "description": "HiDeoo's ESLint React configuration",
   "homepage": "https://github.com/HiDeoo/eslint-config",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "HiDeoo",
   "main": "index.js",
   "license": "MIT",
