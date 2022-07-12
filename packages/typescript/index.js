@@ -18,8 +18,12 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': ['error', { classes: false, functions: false, variables: true }],
   },
   settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
     'import/resolver': {
       node: { extensions: ['.js', '.mjs', '.cjs', '.jsx', '.ts', '.tsx'] },
+      typescript: { alwaysTryTypes: true },
     },
   },
 }
