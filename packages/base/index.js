@@ -45,7 +45,7 @@ module.exports = {
     eqeqeq: 'error',
     'no-alert': 'warn',
     'no-console': ['error', { allow: ['warn', 'error'] }],
-    'no-use-before-define': ['error', { classes: false, functions: false, variables: true }],
+    'no-use-before-define': ['error', { classes: false, functions: false, variables: false }],
     'no-return-assign': 'error',
     'no-var': 'error',
     'prefer-arrow-callback': ['error', { allowNamedFunctions: false, allowUnboundThis: true }],

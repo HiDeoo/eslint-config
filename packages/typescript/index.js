@@ -15,7 +15,10 @@ module.exports = {
     'no-redeclare': 'off',
     '@typescript-eslint/no-redeclare': 'error',
     'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': ['error', { classes: false, functions: false, variables: true }],
+    '@typescript-eslint/no-use-before-define': [
+      'error',
+      { classes: false, functions: false, typedefs: false, variables: false },
+    ],
   },
   settings: {
     'import/parsers': {
