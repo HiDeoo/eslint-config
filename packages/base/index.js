@@ -44,6 +44,7 @@ module.exports = {
     'array-callback-return': 'error',
     eqeqeq: 'error',
     'no-console': ['error', { allow: ['warn', 'error'] }],
+    'no-constant-binary-expression': 'error',
     'no-use-before-define': ['error', { classes: false, functions: false, variables: false }],
     'no-return-assign': 'error',
     'no-var': 'error',
