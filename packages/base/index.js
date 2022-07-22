@@ -10,6 +10,7 @@ module.exports = {
     '__snapshots__',
     'coverage',
     'dist',
+    'out',
     'output',
     'packages-lock.json',
     'pnpm-lock.yaml',
