@@ -7,7 +7,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "lint": "eslint . --max-warnings=0",
+    "lint": "prettier -c . && eslint . --max-warnings=0",
     "release": "pnpm -r publish --access public",
     "prepare": "husky install"
   },
