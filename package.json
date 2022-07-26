@@ -7,7 +7,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "lint": "eslint . --max-warnings=0",
+    "lint": "prettier -c . && eslint . --max-warnings=0",
     "release": "pnpm -r publish --access public",
     "prepare": "husky install"
   },
@@ -35,7 +35,8 @@
     "url": "https://github.com/HiDeoo/eslint-config"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown --cache"
+    "**/*": "prettier -w -u --cache",
+    "**/*.js": "eslint --max-warnings=0"
   },
   "packageManager": "pnpm@7.4.0",
   "prettier": "@hideoo/prettier-config"
