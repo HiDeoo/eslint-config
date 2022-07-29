@@ -10,6 +10,7 @@ module.exports = {
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports', disallowTypeAnnotations: false }],
     '@typescript-eslint/no-empty-interface': ['error', { allowSingleExtends: true }],
+    '@typescript-eslint/no-namespace': ['error', { allowDeclarations: true, allowDefinitionFiles: true }],
     '@typescript-eslint/no-unused-vars': ['warn', { ignoreRestSiblings: true }],
     'no-dupe-class-members': 'off',
     '@typescript-eslint/no-dupe-class-members': 'error',
