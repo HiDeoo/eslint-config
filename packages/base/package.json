@@ -2,7 +2,7 @@
   "name": "@hideoo/eslint-config-base",
   "description": "HiDeoo's ESLint base configuration",
   "homepage": "https://github.com/HiDeoo/eslint-config",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "author": "HiDeoo",
   "main": "index.js",
   "license": "MIT",
