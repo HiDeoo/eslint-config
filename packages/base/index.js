@@ -16,6 +16,7 @@ module.exports = {
     'pnpm-lock.yaml',
     'public',
     'yarn.lock',
+    '!.prettierrc.js',
   ],
   overrides: [
     {
