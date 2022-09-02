@@ -17,6 +17,7 @@ module.exports = {
     'public',
     'yarn.lock',
     '!.prettierrc.js',
+    '!.prettierrc.cjs',
   ],
   overrides: [
     {
