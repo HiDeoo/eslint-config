@@ -2,7 +2,15 @@ const base = require('@hideoo/eslint-config-base')
 
 module.exports = {
   extends: ['@hideoo/eslint-config-base', 'plugin:@typescript-eslint/recommended', 'plugin:import/typescript'],
-  overrides: base.overrides,
+  overrides: [
+    ...base.overrides,
+    {
+      files: ['*.d.ts'],
+      rules: {
+        'no-var': 'off',
+      },
+    },
+  ],
   parserOptions: {
     warnOnUnsupportedTypeScriptVersion: false,
   },
