@@ -51,7 +51,7 @@ module.exports = {
     'no-use-before-define': ['error', { classes: false, functions: false, variables: false }],
     'no-return-assign': 'error',
     'no-var': 'error',
-    'prefer-arrow-callback': ['error', { allowNamedFunctions: false, allowUnboundThis: true }],
+    'prefer-arrow-callback': ['error', { allowNamedFunctions: true, allowUnboundThis: true }],
     'prefer-const': ['error', { destructuring: 'any', ignoreReadBeforeAssign: true }],
     'prefer-exponentiation-operator': 'error',
     'prefer-rest-params': 'error',
