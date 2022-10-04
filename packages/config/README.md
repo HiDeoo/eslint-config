@@ -35,7 +35,7 @@ Add a script in your `package.json` file to run ESLint:
 ```json
 {
   "scripts": {
-    "lint": "eslint . --max-warnings=0"
+    "lint": "eslint . --cache --max-warnings=0"
   }
 }
 ```
