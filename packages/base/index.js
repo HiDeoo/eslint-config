@@ -45,7 +45,7 @@ module.exports = {
   plugins: ['no-only-tests'],
   rules: {
     'array-callback-return': 'error',
-    eqeqeq: 'error',
+    eqeqeq: ['error', 'always', { null: 'ignore' }],
     'no-console': ['error', { allow: ['warn', 'error'] }],
     'no-constant-binary-expression': 'error',
     'no-use-before-define': ['error', { classes: false, functions: false, variables: false }],
