@@ -8,5 +8,6 @@
     ":separatePatchReleases",
     ":label(dependencies)",
     ":disableDependencyDashboard"
-  ]
+  ],
+  "ignoreDeps": ["pnpm"]
 }
