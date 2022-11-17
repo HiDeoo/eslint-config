@@ -2,7 +2,7 @@
   "name": "@hideoo/eslint-config-workspace",
   "description": "HiDeoo's ESLint configuration",
   "homepage": "https://github.com/HiDeoo/eslint-config",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "author": "HiDeoo",
   "private": true,
   "license": "MIT",
