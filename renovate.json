@@ -2,12 +2,14 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
-    ":semanticCommits",
+    ":disableDependencyDashboard",
+    ":disableDevDependencies",
+    ":disablePeerDependencies",
     ":disableRateLimiting",
-    ":pinAllExceptPeerDependencies",
-    ":separatePatchReleases",
     ":label(dependencies)",
-    ":disableDependencyDashboard"
+    ":pinAllExceptPeerDependencies",
+    ":semanticCommits",
+    ":separatePatchReleases"
   ],
   "ignoreDeps": ["pnpm"]
 }
