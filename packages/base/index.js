@@ -72,6 +72,7 @@ module.exports = {
     'unicorn/no-useless-undefined': 'off',
     'unicorn/prefer-export-from': ['error', { ignoreUsedVariables: true }],
     'unicorn/prefer-module': 'off',
+    'unicorn/prefer-top-level-await': 'off',
     'unicorn/prevent-abbreviations': 'off',
   },
   settings: {
