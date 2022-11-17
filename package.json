@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@hideoo/eslint-config": "workspace:*",
-    "@hideoo/prettier-config": "0.0.1",
+    "@hideoo/prettier-config": "0.1.1",
     "eslint": "8.18.0",
     "husky": "8.0.2",
     "lint-staged": "13.0.3",

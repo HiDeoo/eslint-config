@@ -5,14 +5,14 @@ importers:
   .:
     specifiers:
       '@hideoo/eslint-config': workspace:*
-      '@hideoo/prettier-config': 0.0.1
+      '@hideoo/prettier-config': 0.1.1
       eslint: 8.18.0
       husky: 8.0.2
       lint-staged: 13.0.3
       prettier: 2.7.1
     devDependencies:
       '@hideoo/eslint-config': link:packages/config
-      '@hideoo/prettier-config': 0.0.1
+      '@hideoo/prettier-config': 0.1.1
       eslint: 8.18.0
       husky: 8.0.2
       lint-staged: 13.0.3
@@ -131,8 +131,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@hideoo/prettier-config/0.0.1:
-    resolution: {integrity: sha512-+YgIQ4P4iAYmhWHAWpxgnYEHZBjymCG3YFRZHN2zJr5c9z7j0gmzaXgOA5CdxWNmZr+qHY0QrNWCIoZf2B9CKg==}
+  /@hideoo/prettier-config/0.1.1:
+    resolution: {integrity: sha512-ACVLh1t7HVfgqWv2U/GfMx+hGNHwvJHhOOukV0kQ4dqhRy1pzxXR3VggBgEHGf0VE4dW63XPV5CjNSSqyx//yw==}
     dev: true
 
   /@humanwhocodes/config-array/0.9.5:
