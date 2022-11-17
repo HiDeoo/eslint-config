@@ -10,7 +10,7 @@
     "@hideoo/eslint-config-react": "workspace:*"
   },
   "peerDependencies": {
-    "eslint": ">=8.0.0"
+    "eslint": "8.27.0"
   },
   "keywords": [
     "eslint",
