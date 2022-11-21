@@ -13,7 +13,7 @@
     "eslint-plugin-unicorn": "44.0.2"
   },
   "devDependencies": {
-    "eslint": "8.27.0"
+    "eslint": "8.28.0"
   },
   "peerDependencies": {
     "eslint": ">=8.0.0"
