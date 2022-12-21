@@ -5,6 +5,30 @@ module.exports = {
   overrides: [
     ...base.overrides,
     {
+      files: ['*.ts', '*.tsx'],
+      extends: ['plugin:@typescript-eslint/strict'],
+      parserOptions: {
+        project: ['tsconfig.json', 'packages/*/tsconfig.json'],
+      },
+      rules: {
+        '@typescript-eslint/dot-notation': 'off',
+        '@typescript-eslint/no-dynamic-delete': 'off',
+        '@typescript-eslint/no-for-in-array': 'error',
+        'no-implied-eval': 'off',
+        '@typescript-eslint/no-implied-eval': 'error',
+        '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
+        '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off',
+        '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+        '@typescript-eslint/no-unsafe-argument': 'error',
+        '@typescript-eslint/no-unsafe-call': 'error',
+        '@typescript-eslint/non-nullable-type-assertion-style': 'off',
+        'require-await': 'off',
+        '@typescript-eslint/require-await': 'error',
+        '@typescript-eslint/restrict-plus-operands': 'error',
+        '@typescript-eslint/restrict-template-expressions': ['error', { allowBoolean: true, allowNumber: true }],
+      },
+    },
+    {
       files: ['*.d.ts'],
       rules: {
         'no-var': 'off',
