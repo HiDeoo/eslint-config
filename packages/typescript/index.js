@@ -8,7 +8,7 @@ module.exports = {
       files: ['*.ts', '*.tsx'],
       extends: ['plugin:@typescript-eslint/strict'],
       parserOptions: {
-        project: ['tsconfig.json', 'packages/*/tsconfig.json'],
+        project: ['tsconfig.json'],
       },
       rules: {
         '@typescript-eslint/dot-notation': 'off',
