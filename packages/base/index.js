@@ -15,6 +15,7 @@ module.exports = {
     'packages-lock.json',
     'pnpm-lock.yaml',
     'public',
+    'vite.config.*',
     'yarn.lock',
     '!.prettierrc.js',
     '!.prettierrc.cjs',
