@@ -8,8 +8,8 @@
   "license": "MIT",
   "dependencies": {
     "@hideoo/eslint-config-base": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "5.47.0",
-    "@typescript-eslint/parser": "5.47.0",
+    "@typescript-eslint/eslint-plugin": "5.47.1",
+    "@typescript-eslint/parser": "5.47.1",
     "eslint-import-resolver-typescript": "3.5.2",
     "eslint-plugin-import": "2.26.0"
   },
