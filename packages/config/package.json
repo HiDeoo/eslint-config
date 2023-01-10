@@ -11,6 +11,9 @@
   "peerDependencies": {
     "eslint": ">=8.28.0"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "eslint",
     "config",

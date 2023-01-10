@@ -20,6 +20,9 @@
     "eslint": ">=8.28.0",
     "typescript": ">=4.0.2"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "eslint",
     "config",
