@@ -1,11 +1,10 @@
 {
   "name": "@hideoo/eslint-config-base",
-  "description": "HiDeoo's ESLint base configuration",
-  "homepage": "https://github.com/HiDeoo/eslint-config",
   "version": "0.15.1",
-  "author": "HiDeoo",
-  "main": "index.js",
   "license": "MIT",
+  "description": "HiDeoo's ESLint base configuration",
+  "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
+  "main": "index.js",
   "dependencies": {
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-import": "2.26.0",
@@ -18,17 +17,19 @@
   "peerDependencies": {
     "eslint": ">=8.28.0"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "eslint",
     "config",
     "eslint-config",
     "base"
   ],
-  "bugs": {
-    "url": "https://github.com/HiDeoo/eslint-config/issues"
-  },
+  "homepage": "https://github.com/HiDeoo/eslint-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HiDeoo/eslint-config"
-  }
+    "url": "https://github.com/HiDeoo/eslint-config.git"
+  },
+  "bugs": "https://github.com/HiDeoo/eslint-config/issues"
 }

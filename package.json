@@ -1,24 +1,24 @@
 {
   "name": "@hideoo/eslint-config-workspace",
-  "description": "HiDeoo's ESLint configuration",
-  "homepage": "https://github.com/HiDeoo/eslint-config",
   "version": "0.15.1",
-  "author": "HiDeoo",
-  "private": true,
   "license": "MIT",
+  "description": "HiDeoo's ESLint configuration",
+  "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
   "scripts": {
-    "lint": "prettier -c . && eslint . --cache --max-warnings=0",
+    "lint": "prettier -c --cache . && eslint . --cache --max-warnings=0",
     "release": "pnpm -r publish --access public",
     "prepare": "husky install"
   },
   "devDependencies": {
     "@hideoo/eslint-config": "workspace:*",
-    "@hideoo/prettier-config": "0.1.1",
+    "@hideoo/prettier-config": "1.0.1",
     "eslint": "8.28.0",
     "husky": "8.0.2",
     "lint-staged": "13.0.3",
-    "prettier": "2.7.1"
+    "prettier": "2.8.2"
   },
+  "packageManager": "pnpm@7.4.0",
+  "private": true,
   "keywords": [
     "eslint",
     "config",
@@ -27,17 +27,15 @@
     "react",
     "typescript"
   ],
-  "bugs": {
-    "url": "https://github.com/HiDeoo/eslint-config/issues"
-  },
+  "homepage": "https://github.com/HiDeoo/eslint-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HiDeoo/eslint-config"
+    "url": "https://github.com/HiDeoo/eslint-config.git"
   },
+  "bugs": "https://github.com/HiDeoo/eslint-config/issues",
+  "prettier": "@hideoo/prettier-config",
   "lint-staged": {
     "**/*": "prettier -w -u --cache",
     "**/*.js": "eslint --cache --max-warnings=0"
-  },
-  "packageManager": "pnpm@7.4.0",
-  "prettier": "@hideoo/prettier-config"
+  }
 }
