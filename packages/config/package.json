@@ -1,11 +1,10 @@
 {
   "name": "@hideoo/eslint-config",
-  "description": "HiDeoo's ESLint configuration",
-  "homepage": "https://github.com/HiDeoo/eslint-config",
   "version": "0.15.1",
-  "author": "HiDeoo",
-  "main": "index.js",
   "license": "MIT",
+  "description": "HiDeoo's ESLint configuration",
+  "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
+  "main": "index.js",
   "dependencies": {
     "@hideoo/eslint-config-react": "workspace:*"
   },
@@ -17,11 +16,10 @@
     "config",
     "eslint-config"
   ],
-  "bugs": {
-    "url": "https://github.com/HiDeoo/eslint-config/issues"
-  },
+  "homepage": "https://github.com/HiDeoo/eslint-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HiDeoo/eslint-config"
-  }
+    "url": "https://github.com/HiDeoo/eslint-config.git"
+  },
+  "bugs": "https://github.com/HiDeoo/eslint-config/issues"
 }

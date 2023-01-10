@@ -1,11 +1,10 @@
 {
   "name": "@hideoo/eslint-config-typescript",
-  "description": "HiDeoo's ESLint TypeScript configuration",
-  "homepage": "https://github.com/HiDeoo/eslint-config",
   "version": "0.15.1",
-  "author": "HiDeoo",
-  "main": "index.js",
   "license": "MIT",
+  "description": "HiDeoo's ESLint TypeScript configuration",
+  "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
+  "main": "index.js",
   "dependencies": {
     "@hideoo/eslint-config-base": "workspace:*",
     "@typescript-eslint/eslint-plugin": "5.48.1",
@@ -27,11 +26,10 @@
     "eslint-config",
     "typescript"
   ],
-  "bugs": {
-    "url": "https://github.com/HiDeoo/eslint-config/issues"
-  },
+  "homepage": "https://github.com/HiDeoo/eslint-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HiDeoo/eslint-config"
-  }
+    "url": "https://github.com/HiDeoo/eslint-config.git"
+  },
+  "bugs": "https://github.com/HiDeoo/eslint-config/issues"
 }
