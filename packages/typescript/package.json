@@ -9,7 +9,7 @@
     "@hideoo/eslint-config-base": "workspace:*",
     "@typescript-eslint/eslint-plugin": "5.48.1",
     "@typescript-eslint/parser": "5.48.1",
-    "eslint-import-resolver-typescript": "3.5.2",
+    "eslint-import-resolver-typescript": "3.5.3",
     "eslint-plugin-import": "2.27.4"
   },
   "devDependencies": {
