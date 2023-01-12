@@ -7,7 +7,7 @@
   "main": "index.js",
   "dependencies": {
     "eslint-config-prettier": "8.6.0",
-    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-import": "2.27.4",
     "eslint-plugin-no-only-tests": "3.1.0",
     "eslint-plugin-unicorn": "45.0.2"
   },
