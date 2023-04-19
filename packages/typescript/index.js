@@ -16,6 +16,7 @@ module.exports = {
         '@typescript-eslint/no-for-in-array': 'error',
         'no-implied-eval': 'off',
         '@typescript-eslint/no-implied-eval': 'error',
+        '@typescript-eslint/no-import-type-side-effects': 'error',
         '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off',
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
