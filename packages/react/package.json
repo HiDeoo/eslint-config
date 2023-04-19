@@ -1,6 +1,6 @@
 {
   "name": "@hideoo/eslint-config-react",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "license": "MIT",
   "description": "HiDeoo's ESLint React configuration",
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
