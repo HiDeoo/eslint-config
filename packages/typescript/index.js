@@ -32,6 +32,7 @@ module.exports = {
       files: ['*.d.ts'],
       rules: {
         'no-var': 'off',
+        '@typescript-eslint/consistent-indexed-object-style': 'off',
       },
     },
   ],
