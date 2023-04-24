@@ -34,6 +34,7 @@ module.exports = {
       rules: {
         'no-var': 'off',
         '@typescript-eslint/consistent-indexed-object-style': 'off',
+        '@typescript-eslint/triple-slash-reference': 'off',
       },
     },
   ],
