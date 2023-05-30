@@ -5,6 +5,14 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:jsx-a11y/recommended',
   ],
+  overrides: [
+    {
+      files: ['app/**/layout.tsx', 'app/**/page.tsx'],
+      rules: {
+        'react-refresh/only-export-components': 'off',
+      },
+    },
+  ],
   plugins: ['react-hooks', 'react-refresh'],
   rules: {
     'jsx-a11y/alt-text': ['warn', { elements: ['img'], img: ['Image', 'Img'] }],
