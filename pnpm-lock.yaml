@@ -46,7 +46,7 @@ importers:
       eslint-plugin-jsx-a11y: 6.7.1
       eslint-plugin-react: 7.32.2
       eslint-plugin-react-hooks: 4.6.0
-      eslint-plugin-react-refresh: 0.4.1
+      eslint-plugin-react-refresh: 0.4.3
       react: 18.2.0
       typescript: 4.9.3
     dependencies:
@@ -54,7 +54,7 @@ importers:
       eslint-plugin-jsx-a11y: 6.7.1_eslint@8.40.0
       eslint-plugin-react: 7.32.2_eslint@8.40.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.40.0
-      eslint-plugin-react-refresh: 0.4.1_eslint@8.40.0
+      eslint-plugin-react-refresh: 0.4.3_eslint@8.40.0
     devDependencies:
       eslint: 8.40.0
       react: 18.2.0
@@ -1017,8 +1017,8 @@ packages:
       eslint: 8.40.0
     dev: false
 
-  /eslint-plugin-react-refresh/0.4.1_eslint@8.40.0:
-    resolution: {integrity: sha512-QgrvtRJkmV+m4w953LS146+6RwEe5waouubFVNLBfOjXJf6MLczjymO8fOcKj9jMS8aKkTCMJqiPu2WEeFI99A==}
+  /eslint-plugin-react-refresh/0.4.3_eslint@8.40.0:
+    resolution: {integrity: sha512-Hh0wv8bUNY877+sI0BlCUlsS0TYYQqvzEwJsJJPM2WF4RnTStSnSR3zdJYa2nPOJgg3UghXi54lVyMSmpCalzA==}
     peerDependencies:
       eslint: '>=7'
     dependencies:
