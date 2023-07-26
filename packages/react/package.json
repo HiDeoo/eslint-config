@@ -13,12 +13,12 @@
     "eslint-plugin-react-refresh": "0.4.3"
   },
   "devDependencies": {
-    "eslint": "8.40.0",
+    "eslint": "8.45.0",
     "react": "18.2.0",
     "typescript": "5.1.6"
   },
   "peerDependencies": {
-    "eslint": ">=8.40.0"
+    "eslint": ">=8.45.0"
   },
   "publishConfig": {
     "access": "public"

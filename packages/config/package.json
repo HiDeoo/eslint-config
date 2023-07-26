@@ -9,7 +9,7 @@
     "@hideoo/eslint-config-react": "workspace:*"
   },
   "peerDependencies": {
-    "eslint": ">=8.40.0"
+    "eslint": ">=8.45.0"
   },
   "publishConfig": {
     "access": "public"

@@ -2,7 +2,7 @@ module.exports = {
   extends: ['eslint:recommended', 'plugin:unicorn/recommended', 'plugin:import/recommended', 'prettier'],
   env: {
     browser: true,
-    es2022: true,
+    es2024: true,
     node: true,
   },
   ignorePatterns: [
