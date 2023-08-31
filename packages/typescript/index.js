@@ -1,5 +1,31 @@
 const base = require('@hideoo/eslint-config-base')
 
+const baseRules = {
+  '@typescript-eslint/consistent-type-imports': [
+    'error',
+    { prefer: 'type-imports', disallowTypeAnnotations: false, fixStyle: 'inline-type-imports' },
+  ],
+  'no-dupe-class-members': 'off',
+  '@typescript-eslint/no-dupe-class-members': 'error',
+  '@typescript-eslint/no-dynamic-delete': 'off',
+  '@typescript-eslint/no-empty-interface': ['error', { allowSingleExtends: true }],
+  '@typescript-eslint/no-explicit-any': ['warn', { ignoreRestArgs: true }],
+  '@typescript-eslint/no-import-type-side-effects': 'error',
+  '@typescript-eslint/no-namespace': ['error', { allowDeclarations: true, allowDefinitionFiles: true }],
+  'no-redeclare': 'off',
+  '@typescript-eslint/no-redeclare': 'error',
+  '@typescript-eslint/no-unused-vars': ['warn', { ignoreRestSiblings: true }],
+  'no-use-before-define': 'off',
+  '@typescript-eslint/no-use-before-define': [
+    'error',
+    { classes: false, functions: false, typedefs: false, variables: false },
+  ],
+
+  // This breaks filtering with a type guard.
+  // https://github.com/microsoft/TypeScript/pull/10027/files
+  'unicorn/no-array-callback-reference': 'off',
+}
+
 module.exports = {
   extends: [
     '@hideoo/eslint-config-base',
@@ -16,6 +42,7 @@ module.exports = {
         project: ['tsconfig.json'],
       },
       rules: {
+        ...baseRules,
         '@typescript-eslint/dot-notation': 'off',
         '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off',
@@ -35,31 +62,7 @@ module.exports = {
   parserOptions: {
     warnOnUnsupportedTypeScriptVersion: false,
   },
-  rules: {
-    '@typescript-eslint/consistent-type-imports': [
-      'error',
-      { prefer: 'type-imports', disallowTypeAnnotations: false, fixStyle: 'inline-type-imports' },
-    ],
-    'no-dupe-class-members': 'off',
-    '@typescript-eslint/no-dupe-class-members': 'error',
-    '@typescript-eslint/no-dynamic-delete': 'off',
-    '@typescript-eslint/no-empty-interface': ['error', { allowSingleExtends: true }],
-    '@typescript-eslint/no-explicit-any': ['warn', { ignoreRestArgs: true }],
-    '@typescript-eslint/no-import-type-side-effects': 'error',
-    '@typescript-eslint/no-namespace': ['error', { allowDeclarations: true, allowDefinitionFiles: true }],
-    'no-redeclare': 'off',
-    '@typescript-eslint/no-redeclare': 'error',
-    '@typescript-eslint/no-unused-vars': ['warn', { ignoreRestSiblings: true }],
-    'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': [
-      'error',
-      { classes: false, functions: false, typedefs: false, variables: false },
-    ],
-
-    // This breaks filtering with a type guard.
-    // https://github.com/microsoft/TypeScript/pull/10027/files
-    'unicorn/no-array-callback-reference': 'off',
-  },
+  rules: baseRules,
   settings: {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
