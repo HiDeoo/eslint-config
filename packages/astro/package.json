@@ -1,13 +1,18 @@
 {
-  "name": "@hideoo/eslint-config",
+  "name": "@hideoo/eslint-config-astro",
   "version": "1.5.1",
   "license": "MIT",
-  "description": "HiDeoo's ESLint configuration",
+  "description": "HiDeoo's ESLint Astro configuration",
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
   "main": "index.js",
   "dependencies": {
-    "@hideoo/eslint-config-astro": "workspace:*",
-    "@hideoo/eslint-config-react": "workspace:*"
+    "@hideoo/eslint-config-typescript": "workspace:*",
+    "eslint-plugin-astro": "0.29.0",
+    "eslint-plugin-jsx-a11y": "6.7.1"
+  },
+  "devDependencies": {
+    "eslint": "8.45.0",
+    "typescript": "5.1.6"
   },
   "peerDependencies": {
     "eslint": ">=8.45.0"
@@ -18,7 +23,8 @@
   "keywords": [
     "eslint",
     "config",
-    "eslint-config"
+    "eslint-config",
+    "astro"
   ],
   "homepage": "https://github.com/HiDeoo/eslint-config",
   "repository": {
