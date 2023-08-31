@@ -24,6 +24,7 @@
     "eslint-config",
     "base",
     "react",
+    "astro",
     "typescript"
   ],
   "homepage": "https://github.com/HiDeoo/eslint-config",
