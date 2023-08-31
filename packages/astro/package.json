@@ -1,6 +1,6 @@
 {
   "name": "@hideoo/eslint-config-astro",
-  "version": "1.5.1",
+  "version": "2.0.0",
   "license": "MIT",
   "description": "HiDeoo's ESLint Astro configuration",
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
