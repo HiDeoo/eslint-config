@@ -10,5 +10,11 @@ module.exports = {
         extraFileExtensions: ['.astro'],
       },
     },
+    {
+      files: ['**/*.astro/*.js', '*.astro/*.js'],
+      rules: {
+        'no-undef': 'off',
+      },
+    },
   ],
 }
