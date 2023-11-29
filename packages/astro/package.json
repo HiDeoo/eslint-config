@@ -7,7 +7,7 @@
   "main": "index.js",
   "dependencies": {
     "@hideoo/eslint-config-typescript": "workspace:*",
-    "eslint-plugin-astro": "0.29.1",
+    "eslint-plugin-astro": "0.30.0",
     "eslint-plugin-jsx-a11y": "6.8.0"
   },
   "devDependencies": {
