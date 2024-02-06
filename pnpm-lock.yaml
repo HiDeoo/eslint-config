@@ -58,8 +58,8 @@ importers:
         specifier: 3.1.0
         version: 3.1.0
       eslint-plugin-unicorn:
-        specifier: 50.0.1
-        version: 50.0.1(eslint@8.45.0)
+        specifier: 51.0.0
+        version: 51.0.0(eslint@8.45.0)
     devDependencies:
       eslint:
         specifier: 8.45.0
@@ -1311,8 +1311,8 @@ packages:
       string.prototype.matchall: 4.0.8
     dev: false
 
-  /eslint-plugin-unicorn@50.0.1(eslint@8.45.0):
-    resolution: {integrity: sha512-KxenCZxqSYW0GWHH18okDlOQcpezcitm5aOSz6EnobyJ6BIByiPDviQRjJIUAjG/tMN11958MxaQ+qCoU6lfDA==}
+  /eslint-plugin-unicorn@51.0.0(eslint@8.45.0):
+    resolution: {integrity: sha512-104L+VrZQ0RlyTYQPmF0ofoN1/rot1U/BoCSUDTTiPgumzA/QUzDwUqbR4Q0laOYXi5sYI2HDrJQ/b5PlJteCA==}
     engines: {node: '>=16'}
     peerDependencies:
       eslint: '>=8.56.0'
