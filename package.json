@@ -27,9 +27,15 @@
     "lint": "prettier -c --cache . && eslint . --cache --max-warnings=0",
     "prepare": "husky install"
   },
+  "dependencies": {
+    "@eslint/js": "8.56.0",
+    "globals": "14.0.0"
+  },
   "devDependencies": {
     "@hideoo/prettier-config": "2.0.0",
     "@hideoo/tsconfig": "2.0.1",
+    "@types/eslint": "8.56.2",
+    "@types/eslint__js": "8.42.3",
     "eslint": "8.56.0",
     "husky": "8.0.3",
     "lint-staged": "13.2.3",
@@ -51,10 +57,10 @@
     "eslint",
     "config",
     "eslint-config",
-    "base",
-    "react",
+    "javascript",
+    "typescript",
     "astro",
-    "typescript"
+    "react"
   ],
   "homepage": "https://github.com/HiDeoo/eslint-config",
   "repository": {

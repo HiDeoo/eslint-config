@@ -4,6 +4,14 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  '@eslint/js':
+    specifier: 8.56.0
+    version: 8.56.0
+  globals:
+    specifier: 14.0.0
+    version: 14.0.0
+
 devDependencies:
   '@hideoo/prettier-config':
     specifier: 2.0.0
@@ -11,6 +19,12 @@ devDependencies:
   '@hideoo/tsconfig':
     specifier: 2.0.1
     version: 2.0.1
+  '@types/eslint':
+    specifier: 8.56.2
+    version: 8.56.2
+  '@types/eslint__js':
+    specifier: 8.42.3
+    version: 8.42.3
   eslint:
     specifier: 8.56.0
     version: 8.56.0
@@ -279,7 +293,6 @@ packages:
   /@eslint/js@8.56.0:
     resolution: {integrity: sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dev: true
 
   /@hideoo/prettier-config@2.0.0:
     resolution: {integrity: sha512-qylbgiR1n1eQXfpy97+b6pbtE5tf4uxPIqCSE0mp9fw/Npc4CiUxJlMoiUYw169GXTaZzqH/lFVm2sbO2Id2Ug==}
@@ -483,8 +496,25 @@ packages:
     dev: true
     optional: true
 
+  /@types/eslint@8.56.2:
+    resolution: {integrity: sha512-uQDwm1wFHmbBbCZCqAlq6Do9LYwByNZHWzXppSnay9SuwJ+VRbjkbLABer54kcPnMSlG6Fdiy2yaFXm/z9Z5gw==}
+    dependencies:
+      '@types/estree': 1.0.5
+      '@types/json-schema': 7.0.15
+    dev: true
+
+  /@types/eslint__js@8.42.3:
+    resolution: {integrity: sha512-alfG737uhmPdnvkrLdZLcEKJ/B8s9Y4hrZ+YAdzUeoArBlSUERA2E87ROfOaS4jd/C45fzOoZzidLc1IPwLqOw==}
+    dependencies:
+      '@types/eslint': 8.56.2
+    dev: true
+
   /@types/estree@1.0.5:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
+    dev: true
+
+  /@types/json-schema@7.0.15:
+    resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
     dev: true
 
   /@ungap/structured-clone@1.2.0:
@@ -1053,6 +1083,11 @@ packages:
     dependencies:
       type-fest: 0.20.2
     dev: true
+
+  /globals@14.0.0:
+    resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
+    engines: {node: '>=18'}
+    dev: false
 
   /globby@11.1.0:
     resolution: {integrity: sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==}
