@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@eslint/js": "8.56.0",
+    "eslint-config-prettier": "9.1.0",
     "eslint-plugin-unicorn": "51.0.1",
     "globals": "14.0.0"
   },
@@ -36,6 +37,7 @@
     "@hideoo/prettier-config": "2.0.0",
     "@hideoo/tsconfig": "2.0.1",
     "@types/eslint": "8.56.2",
+    "@types/eslint-config-prettier": "6.11.3",
     "@types/eslint__js": "8.42.3",
     "eslint": "8.56.0",
     "husky": "8.0.3",
