@@ -11,11 +11,11 @@
     "eslint-plugin-jsx-a11y": "6.8.0"
   },
   "devDependencies": {
-    "eslint": "8.45.0",
+    "eslint": "8.56.0",
     "typescript": "5.1.6"
   },
   "peerDependencies": {
-    "eslint": ">=8.45.0"
+    "eslint": ">=8.56.0"
   },
   "publishConfig": {
     "access": "public"
