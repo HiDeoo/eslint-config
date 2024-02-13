@@ -1,6 +1,7 @@
-import type { Config } from '../libs/eslint'
-import globals from 'globals'
 import js from '@eslint/js'
+import globals from 'globals'
+
+import type { Config } from '../libs/eslint'
 
 export function javascript(): Config[] {
   return [

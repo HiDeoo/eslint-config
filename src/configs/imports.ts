@@ -17,7 +17,6 @@ export function imports(): Config[] {
         'import/no-mutable-exports': 'error',
         'import/no-named-default': 'error',
         'import/no-self-import': 'error',
-        'import/no-unresolved': 'error',
         'import/no-webpack-loader-syntax': 'error',
         'import/order': [
           'warn',
