@@ -1,5 +1,5 @@
 {
-  "name": "@hideoo/eslint-config-workspace",
+  "name": "@hideoo/eslint-config",
   "version": "2.0.2",
   "license": "MIT",
   "description": "HiDeoo's ESLint configuration",
@@ -9,7 +9,6 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@hideoo/eslint-config": "workspace:*",
     "@hideoo/prettier-config": "2.0.0",
     "eslint": "8.56.0",
     "husky": "8.0.3",
@@ -17,7 +16,9 @@
     "prettier": "3.0.0"
   },
   "packageManager": "pnpm@8.10.0",
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "eslint",
     "config",
