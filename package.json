@@ -25,12 +25,14 @@
     "dev": "tsup --watch",
     "build": "tsup --dts",
     "preview": "pnpm dlx eslint-flat-config-viewer",
-    "lint": "prettier -c --cache . && eslint . --cache --max-warnings=0",
+    "lint": "prettier -c --cache . && eslint . --cache --max-warnings=0 && tsc --noEmit",
     "prepare": "husky install"
   },
   "dependencies": {
     "@eslint/js": "8.56.0",
+    "astro-eslint-parser": "0.16.3",
     "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-astro": "0.31.4",
     "eslint-plugin-i": "2.29.1",
     "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-no-only-tests": "3.1.0",

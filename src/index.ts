@@ -1,3 +1,4 @@
+import { astro } from './configs/astro'
 import { ignores } from './configs/ignores'
 import { imports } from './configs/imports'
 import { javascript } from './configs/javascript'
@@ -18,6 +19,10 @@ export default function hideoo(...userConfigs: Config[][]) {
 
   if (isPkgInstalled(ReactPkgs)) {
     configs.push(react())
+  }
+
+  if (isPkgInstalled('astro')) {
+    configs.push(astro())
   }
 
   configs.push(...userConfigs, prettier())
