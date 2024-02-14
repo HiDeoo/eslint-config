@@ -15,6 +15,7 @@ export function unicorn(): Config[] {
         'unicorn/no-process-exit': 'off',
         'unicorn/no-useless-undefined': 'off',
         'unicorn/prefer-export-from': ['error', { ignoreUsedVariables: true }],
+        'unicorn/prevent-abbreviations': 'off',
       },
     },
   ]

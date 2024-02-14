@@ -28,6 +28,7 @@ export function typescript(): Config[] {
         ],
         '@typescript-eslint/dot-notation': 'off',
         '@typescript-eslint/method-signature-style': ['error', 'property'],
+        '@typescript-eslint/no-confusing-void-expression': ['error', { ignoreArrowShorthand: true }],
         '@typescript-eslint/no-dynamic-delete': 'off',
         '@typescript-eslint/no-empty-interface': ['error', { allowSingleExtends: true }],
         '@typescript-eslint/no-explicit-any': ['warn', { ignoreRestArgs: true }],
@@ -57,6 +58,10 @@ export function typescript(): Config[] {
 
         'import/no-duplicates': 'off',
       },
+    },
+    {
+      files: ['**/*.js', 'vite.config.ts', 'vitest.config.ts'],
+      ...pluginTypeScript.configs.disableTypeChecked,
     },
   ]
 }
