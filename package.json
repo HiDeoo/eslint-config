@@ -24,6 +24,7 @@
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup --dts",
+    "preview": "pnpm dlx eslint-flat-config-viewer",
     "lint": "prettier -c --cache . && eslint . --cache --max-warnings=0",
     "prepare": "husky install"
   },
