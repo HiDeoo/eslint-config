@@ -1,9 +1,14 @@
 import process from 'node:process'
 
 import type { Config } from '../libs/eslint'
+import { isPkgInstalled } from '../libs/pkg'
 import { pluginImport, pluginTypeScript } from '../libs/plugins'
 
 export function typescript(): Config[] {
+  if (!isPkgInstalled('typescript')) {
+    return []
+  }
+
   return [
     ...pluginTypeScript.configs.strictTypeChecked,
     ...pluginTypeScript.configs.stylisticTypeChecked,

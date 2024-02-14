@@ -2,11 +2,14 @@ import type { Config } from '../libs/eslint'
 import { isPkgInstalled } from '../libs/pkg'
 import { pluginJSXA11y, pluginReact, pluginReactHooks, pluginReactRefresh } from '../libs/plugins'
 
-export const ReactPkgs = ['react', 'preact']
-
+const reactPkgs = ['react', 'preact']
 const allowConstantExportPkgs = ['vite']
 
 export function react(): Config[] {
+  if (!isPkgInstalled(reactPkgs)) {
+    return []
+  }
+
   const allowConstantExport = isPkgInstalled(allowConstantExportPkgs)
 
   return [
@@ -24,7 +27,7 @@ export function react(): Config[] {
         ...pluginReactHooks.configs.recommended.rules,
 
         'react/jsx-no-target-blank': 'off',
-        'react/prop-type': 'off',
+        'react/prop-types': 'off',
 
         'jsx-a11y/alt-text': ['error', { img: ['Image', 'Img'] }],
 

@@ -1,9 +1,14 @@
 import astroESLintParser from 'astro-eslint-parser'
 
 import type { Config } from '../libs/eslint'
+import { isPkgInstalled } from '../libs/pkg'
 import { pluginAstro, pluginJSXA11y, pluginTypeScript } from '../libs/plugins'
 
 export function astro(): Config[] {
+  if (!isPkgInstalled('astro')) {
+    return []
+  }
+
   return [
     {
       files: ['**/*.astro'],
