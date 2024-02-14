@@ -87,7 +87,9 @@
   "bugs": "https://github.com/HiDeoo/eslint-config/issues",
   "prettier": "@hideoo/prettier-config",
   "lint-staged": {
-    "**/*": "prettier -w -u --cache",
-    "**/*.js": "eslint --cache --max-warnings=0"
+    "*": [
+      "prettier -w -u --cache",
+      "eslint --cache --no-warn-ignored --max-warnings=0"
+    ]
   }
 }
