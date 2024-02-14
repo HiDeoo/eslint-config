@@ -11,7 +11,6 @@ export function imports(): Config[] {
         'import/export': 'error',
         'import/first': 'error',
         'import/named': 'error',
-        'import/newline-after-import': ['error', { considerComments: true }],
         'import/no-anonymous-default-export': 'error',
         'import/no-duplicates': 'warn',
         'import/no-mutable-exports': 'error',

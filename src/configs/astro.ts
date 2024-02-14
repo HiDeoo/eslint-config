@@ -33,13 +33,11 @@ export function astro(): Config[] {
         ...pluginAstro.configs.recommended.rules,
         // @ts-expect-error - This is not typed in the plugin but the rules exist.
         ...pluginAstro.configs['jsx-a11y-recommended'].rules,
+        ...pluginTypeScript.configs.disableTypeChecked.rules,
 
         'astro/jsx-a11y/alt-text': ['error', { img: ['Image', 'Img'] }],
 
         'unicorn/text-encoding-identifier-case': 'off',
-
-        // https://github.com/ota-meshi/eslint-plugin-astro/issues/168
-        '@typescript-eslint/no-unsafe-return': 'off',
       },
     },
     {

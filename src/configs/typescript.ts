@@ -41,6 +41,7 @@ export function typescript(): Config[] {
         '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
         '@typescript-eslint/no-namespace': ['error', { allowDeclarations: true, allowDefinitionFiles: true }],
         '@typescript-eslint/no-require-imports': 'error',
+        '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off',
         '@typescript-eslint/no-unused-vars': ['warn', { ignoreRestSiblings: true }],
         '@typescript-eslint/no-use-before-define': [
           'error',
@@ -65,8 +66,16 @@ export function typescript(): Config[] {
       },
     },
     {
-      files: ['**/*.js', 'vite.config.ts', 'vitest.config.ts'],
+      files: ['**/*.?(c)js', 'vite.config.ts', 'vitest.config.ts'],
       ...pluginTypeScript.configs.disableTypeChecked,
+    },
+    {
+      files: ['**/*.?(c)js'],
+      name: 'antfu:typescript:javascript-overrides',
+      rules: {
+        '@typescript-eslint/no-require-imports': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
+      },
     },
   ]
 }

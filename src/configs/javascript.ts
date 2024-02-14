@@ -88,7 +88,6 @@ export function javascript(): Config[] {
         'no-useless-computed-key': 'error',
         'no-useless-constructor': 'error',
         'no-useless-rename': 'error',
-        'no-useless-return': 'error',
         'no-var': 'error',
         'prefer-arrow-callback': ['error', { allowNamedFunctions: true, allowUnboundThis: true }],
         'prefer-const': ['error', { destructuring: 'any', ignoreReadBeforeAssign: true }],
