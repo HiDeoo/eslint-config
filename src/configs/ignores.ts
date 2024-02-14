@@ -1,7 +1,10 @@
+import gitignore from 'eslint-config-flat-gitignore'
+
 import type { Config } from '../libs/eslint'
 
 export function ignores(): Config[] {
   return [
+    gitignore({ strict: false }),
     {
       ignores: [
         '**/__snapshots__',
