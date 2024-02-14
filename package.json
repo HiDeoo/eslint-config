@@ -26,6 +26,7 @@
     "build": "tsup --dts",
     "preview": "pnpm dlx eslint-flat-config-viewer",
     "lint": "prettier -c --cache . && eslint . --cache --max-warnings=0 && tsc --noEmit",
+    "prepublishOnly": "pnpm build",
     "prepare": "husky install"
   },
   "dependencies": {
