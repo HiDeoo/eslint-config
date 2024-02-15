@@ -40,7 +40,7 @@ Add a script in your `package.json` file to run ESLint:
 }
 ```
 
-### Customize
+## Customization
 
 You can customize the configuration by passing an array of [configuration objects](https://eslint.org/docs/latest/use/configure/configuration-files-new#configuration-objects) to the `hideoo` function:
 
