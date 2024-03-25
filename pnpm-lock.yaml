@@ -18,8 +18,8 @@ dependencies:
     specifier: 9.1.0
     version: 9.1.0(eslint@8.56.0)
   eslint-plugin-astro:
-    specifier: 0.32.0
-    version: 0.32.0(eslint@8.56.0)
+    specifier: 0.33.0
+    version: 0.33.0(eslint@8.56.0)
   eslint-plugin-i:
     specifier: 2.29.1
     version: 2.29.1(@typescript-eslint/parser@7.3.1)(eslint@8.56.0)
@@ -1491,8 +1491,8 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-plugin-astro@0.32.0(eslint@8.56.0):
-    resolution: {integrity: sha512-T8Chx9yG4vrWLCMkQGEbBvUJYSwMVXbw95+EpceFue/jr8JavjYw9A6K1xUxMyycnlWOGMiK7wJ5d/hHNsKBhg==}
+  /eslint-plugin-astro@0.33.0(eslint@8.56.0):
+    resolution: {integrity: sha512-Plvj8Kg1/4IbFThzhLSZ+tackLT/BR1VVkrmyDYDScZFxB6AmuTcn9d6SW71QL6xgnEKjGI8mQiTjSq8BdCl7Q==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=7.0.0'
