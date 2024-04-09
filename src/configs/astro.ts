@@ -24,7 +24,6 @@ export function astro(): Config[] {
         },
       },
       plugins: {
-        // @ts-expect-error - The plugin does not yet support flat configs.
         astro: pluginAstro,
         'jsx-a11y': pluginJSXA11y,
       },
