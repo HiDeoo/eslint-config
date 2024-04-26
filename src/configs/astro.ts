@@ -29,7 +29,9 @@ export function astro(): Config[] {
       },
       processor: 'astro/client-side-ts',
       rules: {
+        // @ts-expect-error - This is not properly typed in the plugin but the rules exist.
         ...pluginAstro.configs.recommended.rules,
+        // @ts-expect-error - This is not properly typed in the plugin but the rules exist.
         ...pluginAstro.configs['jsx-a11y-recommended'].rules,
         ...pluginTypeScript.configs.disableTypeChecked.rules,
 
