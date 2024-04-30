@@ -18,8 +18,8 @@ dependencies:
     specifier: 9.1.0
     version: 9.1.0(eslint@8.56.0)
   eslint-plugin-astro:
-    specifier: 1.0.3
-    version: 1.0.3(eslint@8.56.0)(typescript@5.3.3)
+    specifier: 1.1.1
+    version: 1.1.1(eslint@8.56.0)(typescript@5.3.3)
   eslint-plugin-i:
     specifier: 2.29.1
     version: 2.29.1(@typescript-eslint/parser@7.8.0)(eslint@8.56.0)
@@ -1518,19 +1518,19 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-plugin-astro@1.0.3(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-+Nna5I9ypbYftyhmF6I9QbyK3o6m3PGfjgcgRzSF1TbHEXG5VI8z+nzsLywcvyVtGhcwmOpnB71iE7XDKnB94Q==}
+  /eslint-plugin-astro@1.1.1(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-DDRPLz25oahOHpET5ubbK/G/O8D2CP18XKhQmf8r2jF4BJ5JCk8YGfK4kNmInsw5J41eeZiK1T8aey5ItLrr/g==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.57.0'
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.56.0)
       '@jridgewell/sourcemap-codec': 1.4.15
-      '@typescript-eslint/types': 7.7.1
+      '@typescript-eslint/types': 7.8.0
       astro-eslint-parser: 1.0.1(typescript@5.3.3)
       eslint: 8.56.0
       eslint-compat-utils: 0.5.0(eslint@8.56.0)
-      globals: 13.24.0
+      globals: 15.1.0
       postcss: 8.4.35
       postcss-selector-parser: 6.0.15
     transitivePeerDependencies:
