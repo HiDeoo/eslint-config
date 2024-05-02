@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@eslint/js": "8.57.0",
-    "astro-eslint-parser": "1.0.1",
+    "astro-eslint-parser": "1.0.2",
     "eslint-config-flat-gitignore": "0.1.5",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-astro": "1.1.1",
