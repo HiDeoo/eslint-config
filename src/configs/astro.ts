@@ -48,7 +48,6 @@ export function astro(): Config[] {
       // Configuration for `<script>` tag using TypeScript in `.astro` files.
       files: ['**/*.astro/*.ts'],
       languageOptions: {
-        // @ts-expect-error - Invalid `meta` type.
         parser: pluginTypeScript.parser,
         parserOptions: {
           project: false,
