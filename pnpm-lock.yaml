@@ -42,8 +42,8 @@ dependencies:
     specifier: 54.0.0
     version: 54.0.0(eslint@8.56.0)
   globals:
-    specifier: 15.7.0
-    version: 15.7.0
+    specifier: 15.8.0
+    version: 15.8.0
   local-pkg:
     specifier: 0.5.0
     version: 0.5.0
@@ -1607,7 +1607,7 @@ packages:
       astro-eslint-parser: 1.0.2(typescript@5.3.3)
       eslint: 8.56.0
       eslint-compat-utils: 0.5.0(eslint@8.56.0)
-      globals: 15.7.0
+      globals: 15.8.0
       postcss: 8.4.35
       postcss-selector-parser: 6.0.15
     transitivePeerDependencies:
@@ -2079,8 +2079,8 @@ packages:
     engines: {node: '>=18'}
     dev: false
 
-  /globals@15.7.0:
-    resolution: {integrity: sha512-ivatRXWwKC6ImcdKO7dOwXuXR5XFrdwo45qFwD7D0qOkEPzzJdLXC3BHceBdyrPOD3p1suPaWi4Y4NMm2D++AQ==}
+  /globals@15.8.0:
+    resolution: {integrity: sha512-VZAJ4cewHTExBWDHR6yptdIBlx9YSSZuwojj9Nt5mBRXQzrKakDsVKQ1J63sklLvzAJm0X5+RpO4i3Y2hcOnFw==}
     engines: {node: '>=18'}
     dev: false
 
