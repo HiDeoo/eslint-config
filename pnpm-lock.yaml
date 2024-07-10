@@ -12,8 +12,8 @@ dependencies:
     specifier: 1.0.2
     version: 1.0.2(typescript@5.3.3)
   eslint-config-flat-gitignore:
-    specifier: 0.1.6
-    version: 0.1.6
+    specifier: 0.1.7
+    version: 0.1.7
   eslint-config-prettier:
     specifier: 9.1.0
     version: 9.1.0(eslint@8.56.0)
@@ -1535,8 +1535,8 @@ packages:
       semver: 7.6.2
     dev: false
 
-  /eslint-config-flat-gitignore@0.1.6:
-    resolution: {integrity: sha512-9MDrX6SNdwb+QtYR4Ox88f5HUPeDog1TgkqFXMJAXpLHZqVpTA5sT/DAGKUj8+TBrQXXemM325dROAofRtTa+w==}
+  /eslint-config-flat-gitignore@0.1.7:
+    resolution: {integrity: sha512-K4UcPriNg6IvNozipPVnLRxuhxys9vRkxYoLLdMPgPDngtWEP/xBT946oUYQHUWLoz4jvX5k+AF/MWh3VN5Lrg==}
     dependencies:
       find-up: 7.0.0
       parse-gitignore: 2.0.0
