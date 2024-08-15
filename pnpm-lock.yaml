@@ -27,8 +27,8 @@ dependencies:
     specifier: 6.9.0
     version: 6.9.0(eslint@8.56.0)
   eslint-plugin-no-only-tests:
-    specifier: 3.1.0
-    version: 3.1.0
+    specifier: 3.3.0
+    version: 3.3.0
   eslint-plugin-react:
     specifier: 7.35.0
     version: 7.35.0(eslint@8.56.0)
@@ -1636,8 +1636,8 @@ packages:
       string.prototype.includes: 2.0.0
     dev: false
 
-  /eslint-plugin-no-only-tests@3.1.0:
-    resolution: {integrity: sha512-Lf4YW/bL6Un1R6A76pRZyE1dl1vr31G/ev8UzIc/geCgFWyrKil8hVjYqWVKGB/UIGmb6Slzs9T0wNezdSVegw==}
+  /eslint-plugin-no-only-tests@3.3.0:
+    resolution: {integrity: sha512-brcKcxGnISN2CcVhXJ/kEQlNa0MEfGRtwKtWA16SkqXHKitaKIMrfemJKLKX1YqDU5C/5JY3PvZXd5jEW04e0Q==}
     engines: {node: '>=5.0.0'}
     dev: false
 
