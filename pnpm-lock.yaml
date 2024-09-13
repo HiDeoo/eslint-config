@@ -18,8 +18,8 @@ dependencies:
     specifier: 9.1.0
     version: 9.1.0(eslint@8.56.0)
   eslint-plugin-astro:
-    specifier: 1.2.3
-    version: 1.2.3(eslint@8.56.0)(typescript@5.3.3)
+    specifier: 1.2.4
+    version: 1.2.4(eslint@8.56.0)(typescript@5.3.3)
   eslint-plugin-i:
     specifier: 2.29.1
     version: 2.29.1(@typescript-eslint/parser@7.18.0)(eslint@8.56.0)
@@ -675,11 +675,6 @@ packages:
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /@typescript-eslint/types@7.16.0:
-    resolution: {integrity: sha512-fecuH15Y+TzlUutvUl9Cc2XJxqdLr7+93SQIbcZfd4XRGGKoxyljK27b+kxKamjRkU7FYC6RrbSCg0ALcZn/xw==}
-    engines: {node: ^18.18.0 || >=20.0.0}
     dev: false
 
   /@typescript-eslint/types@7.18.0:
@@ -1525,15 +1520,15 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-plugin-astro@1.2.3(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-asHT0VUs68oppVnTHfp/WgLqs0yCx9kG9AC/PKLmp+87imeh3nGHMdFm0qP46vHxTM0NLDEhvmjFdAVAqw+QPQ==}
+  /eslint-plugin-astro@1.2.4(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-45uXKW6lxmYEa8Gkh5lCfwAnOyQD90AaMS2Bu9ans88f+pFkliqjGeexiKv73oiTcY3I0vlzTUk5GlqvYlkjyA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.57.0'
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.56.0)
       '@jridgewell/sourcemap-codec': 1.4.15
-      '@typescript-eslint/types': 7.16.0
+      '@typescript-eslint/types': 7.18.0
       astro-eslint-parser: 1.0.3(typescript@5.3.3)
       eslint: 8.56.0
       eslint-compat-utils: 0.5.0(eslint@8.56.0)
