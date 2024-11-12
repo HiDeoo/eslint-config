@@ -9,8 +9,8 @@ dependencies:
     specifier: 8.57.1
     version: 8.57.1
   astro-eslint-parser:
-    specifier: 1.0.3
-    version: 1.0.3(typescript@5.3.3)
+    specifier: 1.1.0
+    version: 1.1.0(typescript@5.3.3)
   eslint-config-flat-gitignore:
     specifier: 0.1.8
     version: 0.1.8
@@ -890,8 +890,8 @@ packages:
     resolution: {integrity: sha512-OH/2E5Fg20h2aPrbe+QL8JZQFko0YZaF+j4mnQ7BGhfavO7OpSLa8a0y9sBwomHdSbkhTS8TQNayBfnW5DwbvQ==}
     dev: false
 
-  /astro-eslint-parser@1.0.3(typescript@5.3.3):
-    resolution: {integrity: sha512-AGsGgcg7Jg9UpyCDgvl/EkdYpe1oMkFdmC2Zl+KWneoieLCtQIFjmcY8yt41gcNx4mby0w8BBJQcBmPuf8UAoQ==}
+  /astro-eslint-parser@1.1.0(typescript@5.3.3):
+    resolution: {integrity: sha512-F6NW1RJo5pp2kPnnM97M5Ohw8zAGjv83MpxHqfAochH68n/kiXN57+hYaNUCA7XkScoVNr6yzvly3hsY34TGfQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dependencies:
       '@astrojs/compiler': 2.5.3
@@ -906,7 +906,7 @@ packages:
       espree: 10.0.1
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.6.2
+      semver: 7.6.3
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -1490,7 +1490,7 @@ packages:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.56.0)
       '@jridgewell/sourcemap-codec': 1.4.15
       '@typescript-eslint/types': 7.18.0
-      astro-eslint-parser: 1.0.3(typescript@5.3.3)
+      astro-eslint-parser: 1.1.0(typescript@5.3.3)
       eslint: 8.56.0
       eslint-compat-utils: 0.6.0(eslint@8.56.0)
       globals: 15.12.0
@@ -3054,12 +3054,6 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
-    dev: false
-
-  /semver@7.6.2:
-    resolution: {integrity: sha512-FNAIBWCx9qcRhoHcgcJ0gvU7SN1lYU2ZXuSfl04bSC5OpvDHFyJCjdNHomPXxjQlCBU67YW64PzY7/VIEH7F2w==}
-    engines: {node: '>=10'}
-    hasBin: true
     dev: false
 
   /semver@7.6.3:
