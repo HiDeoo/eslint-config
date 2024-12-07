@@ -1,23 +1,23 @@
 import type { Config } from '../libs/eslint'
-import { pluginImport } from '../libs/plugins'
+import { pluginImportX } from '../libs/plugins'
 
 export function imports(): Config[] {
   return [
     {
       plugins: {
-        import: pluginImport,
+        'import-x': pluginImportX,
       },
       rules: {
-        'import/export': 'error',
-        'import/first': 'error',
-        'import/named': 'error',
-        'import/no-anonymous-default-export': 'error',
-        'import/no-duplicates': 'warn',
-        'import/no-mutable-exports': 'error',
-        'import/no-named-default': 'error',
-        'import/no-self-import': 'error',
-        'import/no-webpack-loader-syntax': 'error',
-        'import/order': [
+        'import-x/export': 'error',
+        'import-x/first': 'error',
+        'import-x/named': 'error',
+        'import-x/no-anonymous-default-export': 'error',
+        'import-x/no-duplicates': 'warn',
+        'import-x/no-mutable-exports': 'error',
+        'import-x/no-named-default': 'error',
+        'import-x/no-self-import': 'error',
+        'import-x/no-webpack-loader-syntax': 'error',
+        'import-x/order': [
           'warn',
           { 'newlines-between': 'always', alphabetize: { order: 'asc', caseInsensitive: true } },
         ],
