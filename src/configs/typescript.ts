@@ -29,7 +29,7 @@ export function typescript(): Config[] {
       {
         languageOptions: {
           parserOptions: {
-            projectService: true,
+            project: ['tsconfig.json'],
             tsconfigRootDir: process.cwd(),
             warnOnUnsupportedTypeScriptVersion: false,
           },
@@ -79,11 +79,11 @@ export function typescript(): Config[] {
         },
       },
       {
-        files: ['**/*.?(c)js', 'vite.config.ts', 'vitest.config.ts'],
+        files: ['**/*.?(c|m)js', 'vite.config.ts', 'vitest.config.ts'],
         extends: [pluginTypeScript.configs.disableTypeChecked],
       },
       {
-        files: ['**/*.?(c)js'],
+        files: ['**/*.?(c|m)js'],
         name: 'antfu:typescript:javascript-overrides',
         rules: {
           '@typescript-eslint/no-require-imports': 'off',
