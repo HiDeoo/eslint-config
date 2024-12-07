@@ -15,6 +15,7 @@ export function react(): Config[] {
   return [
     {
       plugins: {
+        // @ts-expect-error - This is not properly typed in the plugin at the moment.
         react: pluginReact,
         'jsx-a11y': pluginJSXA11y,
         'react-hooks': pluginReactHooks,
