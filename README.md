@@ -54,7 +54,7 @@ After installing the [ESLint extension](https://marketplace.visualstudio.com/ite
 
 ```json
 {
-  "eslint.experimental.useFlatConfig": true,
+  "eslint.useFlatConfig": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
