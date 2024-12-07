@@ -53,7 +53,7 @@
     "@types/eslint-config-prettier": "6.11.3",
     "@types/eslint__js": "8.42.3",
     "@types/node": "18.19.15",
-    "eslint": "8.56.0",
+    "eslint": "9.16.0",
     "husky": "9.0.11",
     "lint-staged": "15.2.2",
     "prettier": "3.2.5",
@@ -61,7 +61,7 @@
     "typescript": "5.3.3"
   },
   "peerDependencies": {
-    "eslint": ">=8.56.0"
+    "eslint": ">=9.16.0"
   },
   "packageManager": "pnpm@8.10.0",
   "publishConfig": {
