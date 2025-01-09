@@ -44,7 +44,7 @@
     "eslint-plugin-react-refresh": "0.4.16",
     "eslint-plugin-unicorn": "56.0.1",
     "globals": "15.14.0",
-    "local-pkg": "0.5.1",
+    "local-pkg": "1.0.0",
     "typescript-eslint": "8.19.1"
   },
   "devDependencies": {
