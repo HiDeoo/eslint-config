@@ -12,8 +12,8 @@ dependencies:
     specifier: 1.1.0
     version: 1.1.0(typescript@5.7.2)
   eslint-config-flat-gitignore:
-    specifier: 0.3.0
-    version: 0.3.0(eslint@9.16.0)
+    specifier: 1.0.0
+    version: 1.0.0(eslint@9.16.0)
   eslint-config-prettier:
     specifier: 9.1.0
     version: 9.1.0(eslint@9.16.0)
@@ -1853,8 +1853,8 @@ packages:
       semver: 7.6.3
     dev: false
 
-  /eslint-config-flat-gitignore@0.3.0(eslint@9.16.0):
-    resolution: {integrity: sha512-0Ndxo4qGhcewjTzw52TK06Mc00aDtHNTdeeW2JfONgDcLkRO/n/BteMRzNVpLQYxdCC/dFEilfM9fjjpGIJ9Og==}
+  /eslint-config-flat-gitignore@1.0.0(eslint@9.16.0):
+    resolution: {integrity: sha512-EWpSLrAP80IdcYK5sIhq/qAY0pmUdBnbzqzpE3QAn6H6wLBN26cMRoMNU9Di8upTzUSL6TXeYRxWhTYuz8+UQA==}
     peerDependencies:
       eslint: ^9.5.0
     dependencies:
