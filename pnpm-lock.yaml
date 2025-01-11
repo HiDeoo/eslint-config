@@ -39,8 +39,8 @@ dependencies:
     specifier: 5.1.0
     version: 5.1.0(eslint@9.16.0)
   eslint-plugin-react-refresh:
-    specifier: 0.4.16
-    version: 0.4.16(eslint@9.16.0)
+    specifier: 0.4.18
+    version: 0.4.18(eslint@9.16.0)
   eslint-plugin-unicorn:
     specifier: 56.0.1
     version: 56.0.1(eslint@9.16.0)
@@ -1992,8 +1992,8 @@ packages:
       eslint: 9.16.0
     dev: false
 
-  /eslint-plugin-react-refresh@0.4.16(eslint@9.16.0):
-    resolution: {integrity: sha512-slterMlxAhov/DZO8NScf6mEeMBBXodFUolijDvrtTxyezyLoTQaa73FyYus/VbTdftd8wBgBxPMRk3poleXNQ==}
+  /eslint-plugin-react-refresh@0.4.18(eslint@9.16.0):
+    resolution: {integrity: sha512-IRGEoFn3OKalm3hjfolEWGqoF/jPqeEYFp+C8B0WMzwGwBMvlRDQd06kghDhF0C61uJ6WfSDhEZE/sAQjduKgw==}
     peerDependencies:
       eslint: '>=8.40'
     dependencies:
