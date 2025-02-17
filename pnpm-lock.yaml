@@ -18,8 +18,8 @@ dependencies:
     specifier: 10.0.1
     version: 10.0.1(eslint@9.16.0)
   eslint-import-resolver-typescript:
-    specifier: 3.8.0
-    version: 3.8.0(eslint-plugin-import-x@4.6.1)(eslint@9.16.0)
+    specifier: 3.8.1
+    version: 3.8.1(eslint-plugin-import-x@4.6.1)(eslint@9.16.0)
   eslint-plugin-astro:
     specifier: 1.3.1
     version: 1.3.1(eslint@9.16.0)
@@ -1700,8 +1700,8 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-import-resolver-typescript@3.8.0(eslint-plugin-import-x@4.6.1)(eslint@9.16.0):
-    resolution: {integrity: sha512-fItUrP/+xwpavWgadrn6lsvcMe80s08xIVFXkUXvhR4cZD2ga96kRF/z/iFGDI7ZDnvtlaZ0wGic7Tw+DhgVnA==}
+  /eslint-import-resolver-typescript@3.8.1(eslint-plugin-import-x@4.6.1)(eslint@9.16.0):
+    resolution: {integrity: sha512-qw5TPA12HTmb9CkcuiNrFtwhM1ae2FWysLeRrTbQ+/JKS///gbL3fQ5LRhAZnzkcqkScOvkB5Y5o+xgyQz1VVg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '*'
