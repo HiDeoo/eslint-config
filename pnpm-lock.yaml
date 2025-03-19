@@ -19,13 +19,13 @@ dependencies:
     version: 10.1.1(eslint@9.16.0)
   eslint-import-resolver-typescript:
     specifier: 4.2.1
-    version: 4.2.1(eslint-plugin-import-x@4.8.1)(eslint@9.16.0)
+    version: 4.2.1(eslint-plugin-import-x@4.9.0)(eslint@9.16.0)
   eslint-plugin-astro:
     specifier: 1.3.1
     version: 1.3.1(eslint@9.16.0)
   eslint-plugin-import-x:
-    specifier: 4.8.1
-    version: 4.8.1(eslint@9.16.0)(typescript@5.7.2)
+    specifier: 4.9.0
+    version: 4.9.0(eslint@9.16.0)(typescript@5.7.2)
   eslint-plugin-jsx-a11y:
     specifier: 6.10.2
     version: 6.10.2(eslint@9.16.0)
@@ -1771,7 +1771,7 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-import-resolver-typescript@4.2.1(eslint-plugin-import-x@4.8.1)(eslint@9.16.0):
+  /eslint-import-resolver-typescript@4.2.1(eslint-plugin-import-x@4.9.0)(eslint@9.16.0):
     resolution: {integrity: sha512-jAAKR08YRFtlRpxK3OnixV0JB88lH3Xo7HWn1KpKlEvtVUlLMAcRCcBvWT1KAnfT4jPAs4veyFxuUqSdg/Vd3g==}
     engines: {node: ^16.17.0 || >=18.6.0}
     peerDependencies:
@@ -1789,7 +1789,7 @@ packages:
     dependencies:
       debug: 4.4.0
       eslint: 9.16.0
-      eslint-plugin-import-x: 4.8.1(eslint@9.16.0)(typescript@5.7.2)
+      eslint-plugin-import-x: 4.9.0(eslint@9.16.0)(typescript@5.7.2)
       get-tsconfig: 4.10.0
       rspack-resolver: 1.2.1
       stable-hash: 0.0.5
@@ -1817,8 +1817,8 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-plugin-import-x@4.8.1(eslint@9.16.0)(typescript@5.7.2):
-    resolution: {integrity: sha512-Jyr0mGWYia2gRl4XvbMVZ4OvpJe3+Gu/X0c4zHhHItjsHb4gkHkSPUPHWxZPyzWXnsClAZu41LMJDY4lfJnP3g==}
+  /eslint-plugin-import-x@4.9.0(eslint@9.16.0)(typescript@5.7.2):
+    resolution: {integrity: sha512-qdrsei0heLV8z9QpY2/PHF/r/3fF15w3JeVXqWlLzPMiiwYx0VAwIjxN6SzdaPVuGeIMAbQHHS1Wwdn1/bsCgw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
