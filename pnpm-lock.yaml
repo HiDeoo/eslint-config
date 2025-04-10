@@ -15,8 +15,8 @@ dependencies:
     specifier: 2.1.0
     version: 2.1.0(eslint@9.16.0)
   eslint-config-prettier:
-    specifier: 10.1.1
-    version: 10.1.1(eslint@9.16.0)
+    specifier: 10.1.2
+    version: 10.1.2(eslint@9.16.0)
   eslint-import-resolver-typescript:
     specifier: 4.3.2
     version: 4.3.2(eslint-plugin-import-x@4.10.2)(eslint@9.16.0)
@@ -1884,8 +1884,8 @@ packages:
       eslint: 9.16.0
     dev: false
 
-  /eslint-config-prettier@10.1.1(eslint@9.16.0):
-    resolution: {integrity: sha512-4EQQr6wXwS+ZJSzaR5ZCrYgLxqvUjdXctaEtBqHcbkW944B1NQyO4qpdHQbXBONfwxXdkAY81HH4+LUfrg+zPw==}
+  /eslint-config-prettier@10.1.2(eslint@9.16.0):
+    resolution: {integrity: sha512-Epgp/EofAUeEpIdZkW60MHKvPyru1ruQJxPL+WIycnaPApuseK0Zpkrh/FwL9oIpQvIhJwV7ptOy0DWUjTlCiA==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
