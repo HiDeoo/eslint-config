@@ -30,7 +30,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@eslint/js": "9.29.0",
+    "@eslint/js": "9.30.0",
     "astro-eslint-parser": "1.2.2",
     "eslint-config-flat-gitignore": "2.1.0",
     "eslint-config-prettier": "10.1.5",
