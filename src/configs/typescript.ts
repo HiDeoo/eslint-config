@@ -1,5 +1,6 @@
 import process from 'node:process'
 
+import { defineConfig } from 'eslint/config'
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
 
 import type { Config } from '../libs/eslint'
@@ -12,7 +13,7 @@ export function typescript(): Config[] {
   }
 
   return [
-    ...pluginTypeScript.config(
+    ...defineConfig(
       pluginTypeScript.configs.strictTypeChecked,
       pluginTypeScript.configs.stylisticTypeChecked,
       {
