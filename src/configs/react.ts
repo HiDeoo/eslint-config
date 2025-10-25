@@ -13,15 +13,15 @@ export function react(): Config[] {
   const allowConstantExport = isPkgInstalled(allowConstantExportPkgs)
 
   return [
-    // @ts-expect-error - This is not properly typed in the plugin but the rules exist.
-    ...(pluginReactHooks.configs.recommended as Config[]),
     {
       plugins: {
         react: pluginReact,
         'jsx-a11y': pluginJSXA11y,
+        'react-hooks': pluginReactHooks,
         'react-refresh': pluginReactRefresh,
       },
       rules: {
+        ...pluginReactHooks.configs.recommended.rules,
         ...pluginReact.configs.recommended.rules,
         ...pluginReact.configs['jsx-runtime'].rules,
         ...pluginJSXA11y.configs.recommended.rules,
