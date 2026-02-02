@@ -3,14 +3,11 @@ import { isPkgInstalled } from '../libs/pkg'
 import { pluginJSXA11y, pluginReact, pluginReactHooks, pluginReactRefresh } from '../libs/plugins'
 
 const reactPkgs = ['react', 'preact']
-const allowConstantExportPkgs = ['vite']
 
 export function react(): Config[] {
   if (!isPkgInstalled(reactPkgs)) {
     return []
   }
-
-  const allowConstantExport = isPkgInstalled(allowConstantExportPkgs)
 
   return [
     {
@@ -18,7 +15,7 @@ export function react(): Config[] {
         react: pluginReact,
         'jsx-a11y': pluginJSXA11y,
         'react-hooks': pluginReactHooks,
-        'react-refresh': pluginReactRefresh,
+        'react-refresh': pluginReactRefresh.plugin,
       },
       rules: {
         ...pluginReactHooks.configs.recommended.rules,
@@ -31,7 +28,9 @@ export function react(): Config[] {
 
         'jsx-a11y/alt-text': ['error', { img: ['Image', 'Img'] }],
 
-        'react-refresh/only-export-components': ['warn', { allowConstantExport }],
+        ...(isPkgInstalled(['vite'])
+          ? pluginReactRefresh.configs.vite().rules
+          : pluginReactRefresh.configs.recommended().rules),
       },
       settings: {
         react: {
