@@ -45,7 +45,7 @@
     "eslint-plugin-unicorn": "62.0.0",
     "globals": "17.3.0",
     "local-pkg": "1.1.2",
-    "typescript-eslint": "8.54.0"
+    "typescript-eslint": "8.55.0"
   },
   "devDependencies": {
     "@hideoo/prettier-config": "2.0.0",
