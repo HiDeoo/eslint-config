@@ -45,8 +45,8 @@ dependencies:
     specifier: 63.0.0
     version: 63.0.0(eslint@9.31.0)
   globals:
-    specifier: 17.3.0
-    version: 17.3.0
+    specifier: 17.4.0
+    version: 17.4.0
   local-pkg:
     specifier: 1.1.2
     version: 1.1.2
@@ -2470,8 +2470,8 @@ packages:
     engines: {node: '>=18'}
     dev: false
 
-  /globals@17.3.0:
-    resolution: {integrity: sha512-yMqGUQVVCkD4tqjOJf3TnrvaaHDMYp4VlUSObbkIiuCPe/ofdMBFIAcBbCSRFWOnos6qRiTVStDwqPLUclaxIw==}
+  /globals@17.4.0:
+    resolution: {integrity: sha512-hjrNztw/VajQwOLsMNT1cbJiH2muO3OROCHnbehc8eY5JyD2gqz4AcMHPqgaOR59DjgUjYAYLeH699g/eWi2jw==}
     engines: {node: '>=18'}
     dev: false
 
