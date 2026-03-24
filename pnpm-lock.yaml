@@ -12,8 +12,8 @@ dependencies:
     specifier: 1.4.0
     version: 1.4.0
   eslint-config-flat-gitignore:
-    specifier: 2.2.1
-    version: 2.2.1(eslint@9.31.0)
+    specifier: 2.3.0
+    version: 2.3.0(eslint@9.31.0)
   eslint-config-prettier:
     specifier: 10.1.8
     version: 10.1.8(eslint@9.31.0)
@@ -522,8 +522,8 @@ packages:
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     dev: false
 
-  /@eslint/compat@2.0.2(eslint@9.31.0):
-    resolution: {integrity: sha512-pR1DoD0h3HfF675QZx0xsyrsU8q70Z/plx7880NOhS02NuWLgBCOMDL787nUeQ7EWLkxv3bPQJaarjcPQb2Dwg==}
+  /@eslint/compat@2.0.3(eslint@9.31.0):
+    resolution: {integrity: sha512-SjIJhGigp8hmd1YGIBwh7Ovri7Kisl42GYFjrOyHhtfYGGoLW6teYi/5p8W50KSsawUPpuLOSmsq1bD0NGQLBw==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
     peerDependencies:
       eslint: ^8.40 || 9 || 10
@@ -531,7 +531,7 @@ packages:
       eslint:
         optional: true
     dependencies:
-      '@eslint/core': 1.1.0
+      '@eslint/core': 1.1.1
       eslint: 9.31.0
     dev: false
 
@@ -555,8 +555,8 @@ packages:
     dependencies:
       '@types/json-schema': 7.0.15
 
-  /@eslint/core@1.1.0:
-    resolution: {integrity: sha512-/nr9K9wkr3P1EzFTdFdMoLuo1PmIxjmwvPozwoSodjNBdefGujXQUF93u1DDZpEaTuDvMsIQddsd35BwtrW9Xw==}
+  /@eslint/core@1.1.1:
+    resolution: {integrity: sha512-QUPblTtE51/7/Zhfv8BDwO0qkkzQL7P/aWWbqcf4xWLEYn1oKjdO0gglQBB4GAsu7u6wjijbCmzsUTy6mnk6oQ==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
     dependencies:
       '@types/json-schema': 7.0.15
@@ -1919,12 +1919,12 @@ packages:
       semver: 7.7.3
     dev: false
 
-  /eslint-config-flat-gitignore@2.2.1(eslint@9.31.0):
-    resolution: {integrity: sha512-wA5EqN0era7/7Gt5Botlsfin/UNY0etJSEeBgbUlFLFrBi47rAN//+39fI7fpYcl8RENutlFtvp/zRa/M/pZNg==}
+  /eslint-config-flat-gitignore@2.3.0(eslint@9.31.0):
+    resolution: {integrity: sha512-bg4ZLGgoARg1naWfsINUUb/52Ksw/K22K+T16D38Y8v+/sGwwIYrGvH/JBjOin+RQtxxC9tzNNiy4shnGtGyyQ==}
     peerDependencies:
       eslint: ^9.5.0 || ^10.0.0
     dependencies:
-      '@eslint/compat': 2.0.2(eslint@9.31.0)
+      '@eslint/compat': 2.0.3(eslint@9.31.0)
       eslint: 9.31.0
     dev: false
 
