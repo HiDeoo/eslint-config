@@ -14,7 +14,7 @@ export function unicorn(): Config[] {
         'unicorn/no-null': 'off',
         'unicorn/no-process-exit': 'off',
         'unicorn/no-useless-undefined': 'off',
-        'unicorn/prefer-export-from': ['error', { ignoreUsedVariables: true }],
+        'unicorn/prefer-export-from': ['error', { checkUsedVariables: false }],
         'unicorn/prefer-module': 'off',
         'unicorn/prefer-top-level-await': 'off',
         'unicorn/prevent-abbreviations': 'off',
