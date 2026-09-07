@@ -27,7 +27,7 @@
     "preview": "pnpm dlx eslint-flat-config-viewer",
     "lint": "prettier -c --cache . && eslint . --cache --max-warnings=0 && tsc --noEmit",
     "prepublishOnly": "pnpm build",
-    "prepare": "husky"
+    "format": "prettier -w --cache ."
   },
   "dependencies": {
     "@eslint/js": "9.39.5",
@@ -55,8 +55,6 @@
     "@types/eslint-plugin-jsx-a11y": "6.10.0",
     "@types/node": "20.19.9",
     "eslint": "9.31.0",
-    "husky": "9.1.7",
-    "lint-staged": "15.2.10",
     "prettier": "3.4.2",
     "tsup": "8.3.5",
     "typescript": "5.7.2"
@@ -97,11 +95,5 @@
     "url": "https://github.com/HiDeoo/eslint-config.git"
   },
   "bugs": "https://github.com/HiDeoo/eslint-config/issues",
-  "prettier": "@hideoo/prettier-config",
-  "lint-staged": {
-    "*": [
-      "prettier -w -u --cache",
-      "eslint --cache --no-warn-ignored --max-warnings=0"
-    ]
-  }
+  "prettier": "@hideoo/prettier-config"
 }
