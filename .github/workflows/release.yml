@@ -1,26 +1,21 @@
-name: Release
+name: release
 
 permissions: {}
 
 on:
   push:
-    tags:
-      - 'v*.*.*'
+    branches:
+      - main
 
 jobs:
-  integration:
-    name: Integration
-    uses: ./.github/workflows/integration.yml
-
-  publish:
-    name: Publish
+  changeset:
+    name: Changeset
     if: ${{ github.repository_owner == 'hideoo' }}
-    needs:
-      - integration
     runs-on: ubuntu-latest
     permissions:
       contents: write
       id-token: write
+      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -31,15 +26,16 @@ jobs:
       - name: Install pnpm and Node.js
         uses: pnpm/setup@703c52620218391530e48b9e8870d5c0082e1b9b # v2.1.0
         with:
-          cache: true
+          cache: false
 
       - name: Install dependencies
         run: pnpm install
 
-      - name: Publish
-        run: pnpm publish --no-git-checks
-
-      - name: Generate changelog
-        uses: hideoo/changelogithub-action@9166695d56e3e4bcb74176d7ebf98f4bb18c0882 # v1.0.2
+      - name: Create Release Pull Request or Publish
+        uses: changesets/action@8488615a623b1b9c987934bb89eae8af6a946ac1 # v2.1.1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          version-script: pnpm run version
+          publish-script: pnpm changeset publish
+          commit-message: 'ci: release'
+          pr-title: 'ci: release'
