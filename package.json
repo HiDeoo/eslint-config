@@ -26,9 +26,9 @@
     "build": "tsup --dts",
     "preview": "pnpm dlx eslint-flat-config-viewer",
     "lint": "prettier -c --cache . && eslint . --cache --max-warnings=0 && tsc --noEmit",
-    "prepublishOnly": "pnpm build",
     "format": "prettier -w --cache .",
-    "version": "pnpm changeset version && pnpm i --no-frozen-lockfile"
+    "version": "pnpm changeset version && pnpm i --no-frozen-lockfile",
+    "prepublishOnly": "pnpm build"
   },
   "dependencies": {
     "@eslint/js": "9.39.5",
@@ -52,7 +52,7 @@
     "@changesets/changelog-github": "^1.0.1",
     "@changesets/cli": "^3.0.2",
     "@hideoo/prettier-config": "2.0.1",
-    "@hideoo/tsconfig": "2.0.1",
+    "@hideoo/tsconfig": "2.0.3",
     "@types/eslint": "9.6.1",
     "@types/eslint-config-prettier": "6.11.3",
     "@types/eslint-plugin-jsx-a11y": "6.10.0",
@@ -60,7 +60,7 @@
     "eslint": "9.31.0",
     "prettier": "3.9.6",
     "tsup": "8.3.5",
-    "typescript": "5.7.2"
+    "typescript": "7.0.2"
   },
   "peerDependencies": {
     "eslint": ">=9.29.0"
