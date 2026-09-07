@@ -27,7 +27,8 @@
     "preview": "pnpm dlx eslint-flat-config-viewer",
     "lint": "prettier -c --cache . && eslint . --cache --max-warnings=0 && tsc --noEmit",
     "prepublishOnly": "pnpm build",
-    "format": "prettier -w --cache ."
+    "format": "prettier -w --cache .",
+    "version": "pnpm changeset version && pnpm i --no-frozen-lockfile"
   },
   "dependencies": {
     "@eslint/js": "9.39.5",
@@ -48,6 +49,8 @@
     "typescript-eslint": "8.69.0"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^1.0.1",
+    "@changesets/cli": "^3.0.2",
     "@hideoo/prettier-config": "2.0.0",
     "@hideoo/tsconfig": "2.0.1",
     "@types/eslint": "9.6.1",
