@@ -51,14 +51,14 @@
   "devDependencies": {
     "@changesets/changelog-github": "^1.0.1",
     "@changesets/cli": "^3.0.2",
-    "@hideoo/prettier-config": "2.0.0",
+    "@hideoo/prettier-config": "2.0.1",
     "@hideoo/tsconfig": "2.0.1",
     "@types/eslint": "9.6.1",
     "@types/eslint-config-prettier": "6.11.3",
     "@types/eslint-plugin-jsx-a11y": "6.10.0",
     "@types/node": "20.19.9",
     "eslint": "9.31.0",
-    "prettier": "3.4.2",
+    "prettier": "3.9.6",
     "tsup": "8.3.5",
     "typescript": "5.7.2"
   },
