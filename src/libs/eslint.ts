@@ -1,3 +1,3 @@
-import type { FlatConfig } from '@typescript-eslint/utils/ts-eslint'
+import type { FlatConfig } from 'typescript-eslint'
 
 export type Config = FlatConfig.Config

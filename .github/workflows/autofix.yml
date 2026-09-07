@@ -1,4 +1,4 @@
-name: Integration
+name: autofix.ci
 
 permissions: {}
 
@@ -11,10 +11,16 @@ on:
       - main
   workflow_call:
 
+concurrency:
+  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request_target' && github.head_ref || github.ref }}
+
 jobs:
-  lint:
-    name: Lint
+  autofix:
+    name: Format code
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -29,8 +35,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build
-        run: pnpm build
+      - name: Format code
+        run: pnpm format
 
-      - name: Lint
-        run: pnpm lint
+      - name: Run autofix
+        uses: autofix-ci/action@c5b2d67aa2274e7b5a18224e8171550871fc7e4a # v1.3.4
+        with:
+          fail-fast: false

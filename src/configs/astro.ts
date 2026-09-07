@@ -1,8 +1,8 @@
-import astroESLintParser from 'astro-eslint-parser'
+import * as astroESLintParser from 'astro-eslint-parser'
 
 import type { Config } from '../libs/eslint'
 import { isPkgInstalled } from '../libs/pkg'
-import { pluginAstro, pluginJSXA11y, pluginTypeScript } from '../libs/plugins'
+import { pluginAstro, pluginTypeScript } from '../libs/plugins'
 
 export function astro(): Config[] {
   if (!isPkgInstalled('astro')) {
@@ -10,6 +10,7 @@ export function astro(): Config[] {
   }
 
   return [
+    ...pluginAstro.configs.recommended,
     {
       files: ['**/*.astro'],
       languageOptions: {
@@ -25,18 +26,12 @@ export function astro(): Config[] {
       },
       plugins: {
         astro: pluginAstro,
-        'jsx-a11y': pluginJSXA11y,
       },
       processor: 'astro/client-side-ts',
       rules: {
-        // @ts-expect-error - This is not properly typed in the plugin but the rules exist.
-        ...pluginAstro.configs.recommended.rules,
-        // @ts-expect-error - This is not properly typed in the plugin but the rules exist.
-        ...pluginAstro.configs['jsx-a11y-recommended'].rules,
         ...pluginTypeScript.configs.disableTypeChecked.rules,
 
-        'astro/jsx-a11y/alt-text': ['error', { img: ['Image', 'Img'] }],
-
+        'astro/no-prerender-export-outside-pages': 'off',
         'unicorn/text-encoding-identifier-case': 'off',
       },
     },
