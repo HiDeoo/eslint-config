@@ -5,25 +5,18 @@
   "description": "HiDeoo's ESLint configuration",
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
   "type": "module",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": {
         "types": "./dist/index.d.ts",
         "default": "./dist/index.js"
-      },
-      "require": {
-        "types": "./dist/index.d.cts",
-        "default": "./dist/index.cjs"
       }
     },
     "./package.json": "./package.json"
   },
   "scripts": {
-    "dev": "tsup --watch",
-    "build": "tsup --dts",
+    "dev": "tsdown --watch",
+    "build": "tsdown",
     "preview": "pnpm dlx eslint-flat-config-viewer",
     "lint": "prettier -c --cache . && eslint . --cache --max-warnings=0 && tsc --noEmit",
     "format": "prettier -w --cache .",
@@ -31,19 +24,15 @@
     "prepublishOnly": "pnpm build"
   },
   "dependencies": {
-    "@eslint/js": "9.39.5",
-    "astro-eslint-parser": "1.4.0",
+    "@eslint/js": "10.0.1",
+    "astro-eslint-parser": "3.1.0",
     "eslint-config-flat-gitignore": "2.4.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-import-resolver-typescript": "4.4.5",
-    "eslint-plugin-astro": "1.7.0",
+    "eslint-plugin-astro": "3.1.0",
     "eslint-plugin-import-x": "4.17.1",
-    "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-no-only-tests": "3.4.0",
-    "eslint-plugin-react": "7.37.5",
-    "eslint-plugin-react-hooks": "7.1.1",
-    "eslint-plugin-react-refresh": "0.5.6",
-    "eslint-plugin-unicorn": "65.0.1",
+    "eslint-plugin-unicorn": "74.0.0",
     "globals": "17.12.0",
     "local-pkg": "1.2.1",
     "typescript-eslint": "8.69.0"
@@ -55,15 +44,17 @@
     "@hideoo/tsconfig": "2.0.3",
     "@types/eslint": "9.6.1",
     "@types/eslint-config-prettier": "6.11.3",
-    "@types/eslint-plugin-jsx-a11y": "6.10.0",
-    "@types/node": "20.19.9",
-    "eslint": "9.31.0",
+    "@types/node": "24.13.3",
+    "eslint": "10.10.0",
     "prettier": "3.9.6",
-    "tsup": "8.3.5",
-    "typescript": "7.0.2"
+    "tsdown": "^0.23.0",
+    "typescript": "6.0.3"
   },
   "peerDependencies": {
-    "eslint": ">=9.29.0"
+    "eslint": ">=10.9.0"
+  },
+  "engines": {
+    "node": "^22.22.3 || ^24.16.0 || >=26.3.0"
   },
   "devEngines": {
     "runtime": {
@@ -89,8 +80,7 @@
     "eslint-config",
     "javascript",
     "typescript",
-    "astro",
-    "react"
+    "astro"
   ],
   "homepage": "https://github.com/HiDeoo/eslint-config",
   "repository": {

@@ -1,6 +1,7 @@
 {
   "extends": "@hideoo/tsconfig",
   "compilerOptions": {
-    "incremental": false
+    "incremental": false,
+    "types": ["node"]
   }
 }
