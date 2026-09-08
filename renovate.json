@@ -11,5 +11,6 @@
     ":semanticCommits",
     ":separatePatchReleases"
   ],
-  "ignoreDeps": ["pnpm"]
+  "ignoreDeps": ["pnpm"],
+  "minimumReleaseAge": "1 day"
 }
