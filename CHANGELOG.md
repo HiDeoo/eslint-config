@@ -1,5 +1,11 @@
 # @hideoo/eslint-config
 
+## 5.1.0
+
+### Minor Changes
+
+- [#599](https://github.com/HiDeoo/eslint-config/pull/599) [`c090298`](https://github.com/HiDeoo/eslint-config/commit/c0902989dbbea9a53b3c0e960e78ddfaa3c20098) Thanks [@renovate](https://github.com/apps/renovate)! - Updates `typescript-eslint`.
+
 ## 5.0.0
 
 ### Major Changes
