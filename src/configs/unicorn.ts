@@ -12,6 +12,7 @@ export function unicorn(): Config[] {
 
         'unicorn/better-dom-traversing': 'off',
         'unicorn/consistent-boolean-name': 'off',
+        'unicorn/consistent-class-member-order': 'off',
         'unicorn/filename-case': ['error', { cases: { camelCase: true, kebabCase: true, pascalCase: true } }],
         'unicorn/max-nested-calls': 'off',
         'unicorn/name-replacements': 'off',
@@ -30,6 +31,7 @@ export function unicorn(): Config[] {
         'unicorn/prefer-module': 'off',
         'unicorn/prefer-top-level-await': 'off',
         'unicorn/prevent-abbreviations': 'off',
+        'unicorn/require-array-sort-compare': 'off',
         'unicorn/single-line-block-comment-style': 'off',
       },
     },
