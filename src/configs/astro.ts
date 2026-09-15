@@ -1,13 +1,23 @@
-import * as astroESLintParser from 'astro-eslint-parser'
+import { createRequire } from 'node:module'
+import { fileURLToPath } from 'node:url'
 
 import type { Config } from '../libs/eslint'
 import { isPkgInstalled } from '../libs/pkg'
-import { pluginAstro, pluginTypeScript } from '../libs/plugins'
+import { pluginTypeScript } from '../libs/plugins'
+
+const require = createRequire(import.meta.url)
 
 export function astro(): Config[] {
   if (!isPkgInstalled('astro')) {
     return []
   }
+
+  const astroESLintParser: typeof import('astro-eslint-parser') = require(
+    fileURLToPath(import.meta.resolve('astro-eslint-parser')),
+  )
+  const { default: pluginAstro }: typeof import('eslint-plugin-astro') = require(
+    fileURLToPath(import.meta.resolve('eslint-plugin-astro')),
+  )
 
   return [
     ...pluginAstro.configs.recommended,
