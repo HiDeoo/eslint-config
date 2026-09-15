@@ -18,6 +18,7 @@ export function unicorn(): Config[] {
         'unicorn/no-break-in-nested-loop': 'off',
         'unicorn/no-null': 'off',
         'unicorn/no-process-exit': 'off',
+        'unicorn/no-top-level-assignment-in-function': 'off',
         'unicorn/no-top-level-side-effects': 'off',
         'unicorn/no-unreadable-for-of-expression': 'off',
         'unicorn/no-useless-undefined': 'off',
