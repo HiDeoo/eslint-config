@@ -62,6 +62,7 @@ export function typescript(): Config[] {
             { classes: false, functions: false, typedefs: false, variables: false },
           ],
           '@typescript-eslint/non-nullable-type-assertion-style': 'off',
+          '@typescript-eslint/require-array-sort-compare': 'error',
           '@typescript-eslint/restrict-template-expressions': ['error', { allowBoolean: true, allowNumber: true }],
 
           // This breaks filtering with a type guard.
