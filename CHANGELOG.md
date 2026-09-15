@@ -1,5 +1,15 @@
 # @hideoo/eslint-config
 
+## 5.2.0
+
+### Minor Changes
+
+- [#604](https://github.com/HiDeoo/eslint-config/pull/604) [`c92af13`](https://github.com/HiDeoo/eslint-config/commit/c92af139a1f2bbd58966e198ea260964e9f581c4) Thanks [@HiDeoo](https://github.com/HiDeoo)! - Disables `unicorn/require-array-sort-compare` rule.
+
+- [#604](https://github.com/HiDeoo/eslint-config/pull/604) [`99204ac`](https://github.com/HiDeoo/eslint-config/commit/99204acc7a892009c3ae2305166c536a5da68e06) Thanks [@HiDeoo](https://github.com/HiDeoo)! - Disables `unicorn/consistent-class-member-order` rule.
+
+- [#604](https://github.com/HiDeoo/eslint-config/pull/604) [`ced411a`](https://github.com/HiDeoo/eslint-config/commit/ced411ac9613da55b0e9a17ecee14d2c2e89c294) Thanks [@HiDeoo](https://github.com/HiDeoo)! - Enables `@typescript-eslint/require-array-sort-compare` rule.
+
 ## 5.1.0
 
 ### Minor Changes
