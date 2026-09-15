@@ -1,5 +1,11 @@
 # @hideoo/eslint-config
 
+## 5.2.1
+
+### Patch Changes
+
+- [#606](https://github.com/HiDeoo/eslint-config/pull/606) [`c0f99ad`](https://github.com/HiDeoo/eslint-config/commit/c0f99ad3e68e569bbe526c0e9db83434137436bf) Thanks [@HiDeoo](https://github.com/HiDeoo)! - Fixes compatibility with projects not using Astro.
+
 ## 5.2.0
 
 ### Minor Changes
