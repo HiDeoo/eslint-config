@@ -31,6 +31,7 @@ export function unicorn(): Config[] {
         'unicorn/prefer-module': 'off',
         'unicorn/prefer-top-level-await': 'off',
         'unicorn/prevent-abbreviations': 'off',
+        'unicorn/require-array-sort-compare': 'off',
         'unicorn/single-line-block-comment-style': 'off',
       },
     },
