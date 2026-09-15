@@ -1,5 +1,13 @@
 # @hideoo/eslint-config
 
+## 5.1.0
+
+### Minor Changes
+
+- [#603](https://github.com/HiDeoo/eslint-config/pull/603) [`45e302c`](https://github.com/HiDeoo/eslint-config/commit/45e302cd765b6685573e81f3b8ed27e13a6a1135) Thanks [@HiDeoo](https://github.com/HiDeoo)! - Disables `unicorn/no-top-level-assignment-in-function` rule.
+
+- [#599](https://github.com/HiDeoo/eslint-config/pull/599) [`c090298`](https://github.com/HiDeoo/eslint-config/commit/c0902989dbbea9a53b3c0e960e78ddfaa3c20098) Thanks [@renovate](https://github.com/apps/renovate)! - Updates `typescript-eslint`.
+
 ## 5.0.0
 
 ### Major Changes
