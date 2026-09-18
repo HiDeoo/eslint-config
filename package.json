@@ -29,7 +29,7 @@
     "eslint-config-flat-gitignore": "2.4.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-import-resolver-typescript": "4.4.5",
-    "eslint-plugin-astro": "3.1.0",
+    "eslint-plugin-astro": "3.2.1",
     "eslint-plugin-import-x": "4.17.1",
     "eslint-plugin-no-only-tests": "3.4.0",
     "eslint-plugin-unicorn": "74.0.0",
