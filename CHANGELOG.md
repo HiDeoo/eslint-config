@@ -1,5 +1,11 @@
 # @hideoo/eslint-config
 
+## 5.3.0
+
+### Minor Changes
+
+- [#608](https://github.com/HiDeoo/eslint-config/pull/608) [`8acb481`](https://github.com/HiDeoo/eslint-config/commit/8acb4812a57d3f69d5e9daeb087b499d6c601b74) Thanks [@renovate](https://github.com/apps/renovate)! - Updates `eslint-plugin-astro`.
+
 ## 5.2.1
 
 ### Patch Changes
