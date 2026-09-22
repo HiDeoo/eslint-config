@@ -126,7 +126,7 @@ importers:
         version: 4.4.5(eslint-plugin-import-x@4.17.1(@typescript-eslint/utils@8.69.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0))(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)
       eslint-plugin-astro:
         specifier: 3.2.1
-        version: 3.2.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@typescript-eslint/parser@8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint-plugin-jsx-a11y@6.10.2(eslint@10.10.0(supports-color@7.2.0)))(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript-eslint@8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))
+        version: 3.2.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@typescript-eslint/parser@8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint-plugin-jsx-a11y@6.10.2(eslint@10.10.0(supports-color@7.2.0)))(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript-eslint@8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))
       eslint-plugin-import-x:
         specifier: 4.17.1
         version: 4.17.1(@typescript-eslint/utils@8.69.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)
@@ -143,8 +143,8 @@ importers:
         specifier: 1.2.1
         version: 1.2.1
       typescript-eslint:
-        specifier: 8.70.0
-        version: 8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
+        specifier: 8.70.1
+        version: 8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
     devDependencies:
       '@changesets/changelog-github':
         specifier: ^1.0.1
@@ -172,7 +172,7 @@ importers:
         version: 10.10.0(supports-color@7.2.0)
       node:
         specifier: runtime:>=24
-        version: runtime:26.9.0
+        version: runtime:26.10.0
       prettier:
         specifier: 3.9.6
         version: 3.9.6
@@ -613,16 +613,23 @@ packages:
   '@types/node@24.13.3':
     resolution: {integrity: sha512-Dh8vAsV36ig5wa9OX4pXvMc9D3Veibfw2wix0CUwYODLD8nkj9UsLjASr49nPg+2eKzxhBV+v7L8pXvT4e639Q==}
 
-  '@typescript-eslint/eslint-plugin@8.70.0':
-    resolution: {integrity: sha512-/v8HZt6RlyIZxB3ntehELOcUcfxKPVGWXnQdJuHRmzrqgF8nQypcC/oxGW+Ot4VGKDq81XugPKxx0n5PBtf9PA==}
+  '@typescript-eslint/eslint-plugin@8.70.1':
+    resolution: {integrity: sha512-nDNrUQ/4ruSNYbu749TRY7cfrzPtoLHEXSNBI8aaNY32LlZCajixqRf3FqcKC4p5Cam4VOHYx/t+i5+nKXvrqA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
-      '@typescript-eslint/parser': ^8.70.0
+      '@typescript-eslint/parser': ^8.70.1
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
       typescript: '>=4.8.4 <6.1.0'
 
   '@typescript-eslint/parser@8.70.0':
     resolution: {integrity: sha512-zYvrmj9Yxd63UGaXw+kdt6A0F0s0qveJyuatIM77bYC2DE4pgmg7a50u8LR7PRtXd0x+h+Tl3eXabGm06SWd3Q==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
+      typescript: '>=4.8.4 <6.1.0'
+
+  '@typescript-eslint/parser@8.70.1':
+    resolution: {integrity: sha512-nO974WLllwhSFWQXnMLj6nDGa8f0khKEz1JzpPJ1u7Vm/4X1X6ZHajpoknU4bb41vJyMB0HHVyS2GqdhWfIXZw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
@@ -640,12 +647,22 @@ packages:
     peerDependencies:
       typescript: '>=4.8.4 <6.1.0'
 
+  '@typescript-eslint/project-service@8.70.1':
+    resolution: {integrity: sha512-62xOgboPfwc3/IgPSX/W6oQR3ZbF04194FPGUGH8HL8iLFHbt/456/8Ph1wLNUgVF+s94FlHoipBsz+v7+LMnA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      typescript: '>=4.8.4 <6.1.0'
+
   '@typescript-eslint/scope-manager@8.69.0':
     resolution: {integrity: sha512-ewfspqWvSxKSOaplqAUNbaSFO0eB6w1EtQ+esfYFRm3614Ty4uNtExkcbgd6nWsXphbqKyf9ZYdbZdv2xEoWEQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@typescript-eslint/scope-manager@8.70.0':
     resolution: {integrity: sha512-8nP3Kwh5hlgZ4FicGvmznAmJe8UL4sdU8tLukrPaMuQmDuk4Y8xYfzu/aYZW4xT2JCgc7H/TpDI5cGlxcWJSqQ==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@typescript-eslint/scope-manager@8.70.1':
+    resolution: {integrity: sha512-Pa0EeSeAusQc1WbjQMac+YfenewYTBu0KjgYvkUKwhXaHUKbFog23Dm/rp0DX/6tyYOQ3Xl1a+3EcFNZynGHCw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@typescript-eslint/tsconfig-utils@8.69.0':
@@ -660,8 +677,14 @@ packages:
     peerDependencies:
       typescript: '>=4.8.4 <6.1.0'
 
-  '@typescript-eslint/type-utils@8.70.0':
-    resolution: {integrity: sha512-NUMKIhYVaVIVLnRL9CRt+VVcuLgSHUCpXn4/+K8wql+vdInUzvx8BjUO1oJ7cG9shjFJKtF8F8Hh2kCh3/KBVw==}
+  '@typescript-eslint/tsconfig-utils@8.70.1':
+    resolution: {integrity: sha512-jumze1fPI+sDOaM2TWGQdn39PDxTr7TZGeuyLkAbNyx2vtMT3uRnVKChN0hfht5V2TugphJzF6bYXvBcE09qqg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      typescript: '>=4.8.4 <6.1.0'
+
+  '@typescript-eslint/type-utils@8.70.1':
+    resolution: {integrity: sha512-7zKTnyvaVWqzLZHPFQtX1hVHqgkMC+WebPWakNCSyrQVbIP1AM0L0TlBZtACldIRb6PptI8Odk+jyZ5kP3B1VA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
@@ -679,6 +702,10 @@ packages:
     resolution: {integrity: sha512-asTOIYhDg4zdzOScCyaytrsV3cR6B4ecPQlXw/dJIm7J/MZTtCtfVII9JD8Geh4jTCrK/Xe6cg5UevoleMcoJQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@typescript-eslint/types@8.70.1':
+    resolution: {integrity: sha512-Dm1ypdhhrGCTyyehxElhgJ6kgk8MVCv5qXdoOVqPr1uqk42jX8KjrZqhROvdShczA8qrDoYiOWn1ykWlx2k81Q==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
   '@typescript-eslint/typescript-estree@8.69.0':
     resolution: {integrity: sha512-AdFkgqck3Vudb/kWnxlyafU/4aBhHrbQ9locP2N4psXTy5mOBg0SHJumnLvx7r6g1gV4DKvUFwV2nJZBoqOD8w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -691,6 +718,12 @@ packages:
     peerDependencies:
       typescript: '>=4.8.4 <6.1.0'
 
+  '@typescript-eslint/typescript-estree@8.70.1':
+    resolution: {integrity: sha512-TU8PwyGN0PQJUcE96mw8eCQ44SmxGdQlJmlWakHaHQ15eIuuvye5yNtmh/i6oS88jzXVQB71xdNkbkB/fMwL0g==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      typescript: '>=4.8.4 <6.1.0'
+
   '@typescript-eslint/utils@8.69.0':
     resolution: {integrity: sha512-tUbx60BBqQa31kXF5MCsOOLL5E/WzUuxIn7YpAvq+eaUlqvk8/NXnXMBNAdLCr0icjkzem7iUA5QqWHe/hJ1aw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -698,8 +731,8 @@ packages:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
       typescript: '>=4.8.4 <6.1.0'
 
-  '@typescript-eslint/utils@8.70.0':
-    resolution: {integrity: sha512-oZmtKJz/4fufZ2p3+Cn3ijEojcdfR+1zYDH2xKYrEly0dR/Q/1xUPRCOlKGxod78nWlU2UnDe09GZ3TaknBFGA==}
+  '@typescript-eslint/utils@8.70.1':
+    resolution: {integrity: sha512-Esgul8MsnKnRLdYU2Eb2cRV9bS5HJYtKj1ByJnOzzG2M58DGdSUQ1jUuILxipqcpB2h9WLrbD5GijIWUjX/Tqw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
@@ -711,6 +744,10 @@ packages:
 
   '@typescript-eslint/visitor-keys@8.70.0':
     resolution: {integrity: sha512-BoC8PiO4Hkdo0TVJh9Ntxr5MxPDI7/oFsrygN5ADelFSeXG/qgNuucIGA+L5Z6JpPTE/uRfcTWtscjbUaufepQ==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@typescript-eslint/visitor-keys@8.70.1':
+    resolution: {integrity: sha512-Vwj9lUIW5Xq3wQ9w6gv3R86g1hMK8f2zNOdGTAgeXUMMXFK78G9ruCjjqutHMNJc0+CH7LYRnHeUB9IT8wFmcw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@unrs/resolver-binding-android-arm-eabi@1.9.2':
@@ -1673,7 +1710,7 @@ packages:
     resolution: {integrity: sha512-YHs7BmmcsdAI5Ozuf8JZo6PT0mv2GIWC9vMfvUC3dp65M8hn7Ux8CPL+2oBI7juNuj9d0ndhTcznq2ODBps9cQ==}
     engines: {node: '>=18'}
 
-  node@runtime:26.9.0:
+  node@runtime:26.10.0:
     resolution:
       type: variations
       variants:
@@ -1681,9 +1718,9 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-CfBOC34bExUGVxGJbiFLQ1jcn0xCUEtiKwWeJgjU1z0=
+            integrity: sha256-9ak/5zz1WDQU1Ni+WYxOx+cr4ygbWCDUlcKhXOaqE8g=
             type: binary
-            url: https://nodejs.org/download/release/v26.9.0/node-v26.9.0-aix-ppc64.tar.gz
+            url: https://nodejs.org/download/release/v26.10.0/node-v26.10.0-aix-ppc64.tar.gz
           targets:
             - cpu: ppc64
               os: aix
@@ -1691,9 +1728,9 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-bz3n7YU+4oO0vyS25CZhjx01dAHOWBXbGGbrhetLBdk=
+            integrity: sha256-dR/fdDnxFdh+4qjz8YwGW2FRhSBo4+ZmrGCsKZb3Wsk=
             type: binary
-            url: https://nodejs.org/download/release/v26.9.0/node-v26.9.0-darwin-arm64.tar.gz
+            url: https://nodejs.org/download/release/v26.10.0/node-v26.10.0-darwin-arm64.tar.gz
           targets:
             - cpu: arm64
               os: darwin
@@ -1701,9 +1738,9 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-BrLnQu2QJdyErcgwJDs/cxlW6snDIbzNDt44QgmvAqg=
+            integrity: sha256-676aubWK1rtUOQ1uLIYsGvp9RHX7foroFGrN4hG/cN8=
             type: binary
-            url: https://nodejs.org/download/release/v26.9.0/node-v26.9.0-darwin-x64.tar.gz
+            url: https://nodejs.org/download/release/v26.10.0/node-v26.10.0-darwin-x64.tar.gz
           targets:
             - cpu: x64
               os: darwin
@@ -1711,9 +1748,9 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-1Qd1kao4tI2Qv5s6wQ2o0vQNziibIClJE8WMGfFT6xI=
+            integrity: sha256-QjpBv/jiovoV5wL+/ikZ75WCOyN4dE2sy4Q5MCU0tE8=
             type: binary
-            url: https://nodejs.org/download/release/v26.9.0/node-v26.9.0-linux-arm64.tar.gz
+            url: https://nodejs.org/download/release/v26.10.0/node-v26.10.0-linux-arm64.tar.gz
           targets:
             - cpu: arm64
               os: linux
@@ -1721,9 +1758,9 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-ORTOE6zySIDM6zSmlnIG3i+Mqg/vk/FCoN2xTDYyjzU=
+            integrity: sha256-DMa5qZBiFvjefXAUYDj+a6tffo86itKdjb6r3xOBtS0=
             type: binary
-            url: https://nodejs.org/download/release/v26.9.0/node-v26.9.0-linux-ppc64le.tar.gz
+            url: https://nodejs.org/download/release/v26.10.0/node-v26.10.0-linux-ppc64le.tar.gz
           targets:
             - cpu: ppc64le
               os: linux
@@ -1731,9 +1768,9 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-xThv+JaOrfZt15IJNVs4wB7nEsbP0yuSu8ycxNxN4P0=
+            integrity: sha256-eHQCtH8Pj9RioZpEw9cHBSyryV7LlG/oBBobXIEOPWM=
             type: binary
-            url: https://nodejs.org/download/release/v26.9.0/node-v26.9.0-linux-s390x.tar.gz
+            url: https://nodejs.org/download/release/v26.10.0/node-v26.10.0-linux-s390x.tar.gz
           targets:
             - cpu: s390x
               os: linux
@@ -1741,9 +1778,9 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-FTGQoRcLObEVfjKp/fcL1HIRY9LjYBEdEnr0tzZWoyM=
+            integrity: sha256-G99gyBQeUVJgS6+LOPMeGRs3lPYPzitxNR54xAIfAWY=
             type: binary
-            url: https://nodejs.org/download/release/v26.9.0/node-v26.9.0-linux-x64-musl.tar.gz
+            url: https://nodejs.org/download/release/v26.10.0/node-v26.10.0-linux-x64-musl.tar.gz
           targets:
             - cpu: x64
               os: linux
@@ -1752,9 +1789,9 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-A9kQT8TxllLnRID+0RwCPXWYFGS3KS8hpgHD+Vzn2Q0=
+            integrity: sha256-y1yc6cgNe4gh46JYVDxxuTkTjPF8dNXMRLvoXW28Wtg=
             type: binary
-            url: https://nodejs.org/download/release/v26.9.0/node-v26.9.0-linux-x64.tar.gz
+            url: https://nodejs.org/download/release/v26.10.0/node-v26.10.0-linux-x64.tar.gz
           targets:
             - cpu: x64
               os: linux
@@ -1762,10 +1799,10 @@ packages:
             archive: zip
             bin:
               node: node.exe
-            integrity: sha256-tw5FV9Gzgp5FwK/Bmsk3bMvUqGYSNTd//OkLOfxyJ7o=
-            prefix: node-v26.9.0-win-arm64
+            integrity: sha256-t3hkDXJxVmvKqWeZEs3waEwT6CTBFOQai2lvsUr3p6o=
+            prefix: node-v26.10.0-win-arm64
             type: binary
-            url: https://nodejs.org/download/release/v26.9.0/node-v26.9.0-win-arm64.zip
+            url: https://nodejs.org/download/release/v26.10.0/node-v26.10.0-win-arm64.zip
           targets:
             - cpu: arm64
               os: win32
@@ -1773,10 +1810,10 @@ packages:
             archive: zip
             bin:
               node: node.exe
-            integrity: sha256-yK+HC1s+l4mmy9swJw58IS4S12p6+n/H8htrIcwipxs=
-            prefix: node-v26.9.0-win-x64
+            integrity: sha256-n+9+ymdDprkQmJzY54cSN2s5T8ubbh6cRKB5mih/kMU=
+            prefix: node-v26.10.0-win-x64
             type: binary
-            url: https://nodejs.org/download/release/v26.9.0/node-v26.9.0-win-x64.zip
+            url: https://nodejs.org/download/release/v26.10.0/node-v26.10.0-win-x64.zip
           targets:
             - cpu: x64
               os: win32
@@ -1784,9 +1821,9 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-tSt0fobvbRgGjwL0P1CKYINYyXTcXajvJwvII7pHEMo=
+            integrity: sha256-0mAnv/MZcFDSorC/oVGxjoN47YGv+iv1CTgE2xWJebY=
             type: binary
-            url: https://unofficial-builds.nodejs.org/download/release/v26.9.0/node-v26.9.0-linux-arm64-musl.tar.gz
+            url: https://unofficial-builds.nodejs.org/download/release/v26.10.0/node-v26.10.0-linux-arm64-musl.tar.gz
           targets:
             - cpu: arm64
               os: linux
@@ -1795,14 +1832,14 @@ packages:
             archive: tarball
             bin:
               node: bin/node
-            integrity: sha256-Zp3WfsN09zFdusnhGWQdDk83FRngDEtpLx+B56BLdHw=
+            integrity: sha256-5C2pSCG5Qi63a/Wq9N4Jd+BLoyC4r/YUjYlalLCO4iM=
             type: binary
-            url: https://unofficial-builds.nodejs.org/download/release/v26.9.0/node-v26.9.0-linux-x64-musl.tar.gz
+            url: https://unofficial-builds.nodejs.org/download/release/v26.10.0/node-v26.10.0-linux-x64-musl.tar.gz
           targets:
             - cpu: x64
               os: linux
               libc: musl
-    version: 26.9.0
+    version: 26.10.0
     hasBin: true
 
   object-inspect@1.13.3:
@@ -2130,8 +2167,8 @@ packages:
     resolution: {integrity: sha512-3KS2b+kL7fsuk/eJZ7EQdnEmQoaho/r6KUef7hxvltNA5DR8NAUM+8wJMbJyZ4G9/7i3v5zPBIMN5aybAh2/Jg==}
     engines: {node: '>= 0.4'}
 
-  typescript-eslint@8.70.0:
-    resolution: {integrity: sha512-P/W5cz70/cQAuKfY3xwQMWWTV7BvJ0mAQmi+9mBcsVPaBUpd6Ohpa+fECv9rBFrQcig86jAiNBFNWUqnTjr4pw==}
+  typescript-eslint@8.70.1:
+    resolution: {integrity: sha512-AcWG7KDjZ2THNXsgwttMaGmzVi0VFRlFYfqFHYQRbDpF3owuYbuiL8c7UUrd2k8s3PoSfIQrWfrGXfcElrWLYA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
@@ -2632,14 +2669,14 @@ snapshots:
     dependencies:
       undici-types: 7.18.2
 
-  '@typescript-eslint/eslint-plugin@8.70.0(@typescript-eslint/parser@8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
+  '@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
-      '@typescript-eslint/parser': 8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
-      '@typescript-eslint/scope-manager': 8.70.0
-      '@typescript-eslint/type-utils': 8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
-      '@typescript-eslint/utils': 8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
-      '@typescript-eslint/visitor-keys': 8.70.0
+      '@typescript-eslint/parser': 8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/scope-manager': 8.70.1
+      '@typescript-eslint/type-utils': 8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/visitor-keys': 8.70.1
       eslint: 10.10.0(supports-color@7.2.0)
       ignore: 7.0.5
       natural-compare: 1.4.0
@@ -2654,6 +2691,18 @@ snapshots:
       '@typescript-eslint/types': 8.70.0
       '@typescript-eslint/typescript-estree': 8.70.0(supports-color@7.2.0)(typescript@6.0.3)
       '@typescript-eslint/visitor-keys': 8.70.0
+      debug: 4.4.3(supports-color@7.2.0)
+      eslint: 10.10.0(supports-color@7.2.0)
+      typescript: 6.0.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@typescript-eslint/parser@8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
+    dependencies:
+      '@typescript-eslint/scope-manager': 8.70.1
+      '@typescript-eslint/types': 8.70.1
+      '@typescript-eslint/typescript-estree': 8.70.1(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/visitor-keys': 8.70.1
       debug: 4.4.3(supports-color@7.2.0)
       eslint: 10.10.0(supports-color@7.2.0)
       typescript: 6.0.3
@@ -2679,6 +2728,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@typescript-eslint/project-service@8.70.1(supports-color@7.2.0)(typescript@6.0.3)':
+    dependencies:
+      '@typescript-eslint/tsconfig-utils': 8.70.1(typescript@6.0.3)
+      '@typescript-eslint/types': 8.70.1
+      debug: 4.4.3(supports-color@7.2.0)
+      typescript: 6.0.3
+    transitivePeerDependencies:
+      - supports-color
+
   '@typescript-eslint/scope-manager@8.69.0':
     dependencies:
       '@typescript-eslint/types': 8.69.0
@@ -2689,6 +2747,11 @@ snapshots:
       '@typescript-eslint/types': 8.70.0
       '@typescript-eslint/visitor-keys': 8.70.0
 
+  '@typescript-eslint/scope-manager@8.70.1':
+    dependencies:
+      '@typescript-eslint/types': 8.70.1
+      '@typescript-eslint/visitor-keys': 8.70.1
+
   '@typescript-eslint/tsconfig-utils@8.69.0(typescript@6.0.3)':
     dependencies:
       typescript: 6.0.3
@@ -2697,12 +2760,17 @@ snapshots:
   '@typescript-eslint/tsconfig-utils@8.70.0(typescript@6.0.3)':
     dependencies:
       typescript: 6.0.3
+    optional: true
 
-  '@typescript-eslint/type-utils@8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
+  '@typescript-eslint/tsconfig-utils@8.70.1(typescript@6.0.3)':
     dependencies:
-      '@typescript-eslint/types': 8.70.0
-      '@typescript-eslint/typescript-estree': 8.70.0(supports-color@7.2.0)(typescript@6.0.3)
-      '@typescript-eslint/utils': 8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
+      typescript: 6.0.3
+
+  '@typescript-eslint/type-utils@8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
+    dependencies:
+      '@typescript-eslint/types': 8.70.1
+      '@typescript-eslint/typescript-estree': 8.70.1(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
       debug: 4.4.3(supports-color@7.2.0)
       eslint: 10.10.0(supports-color@7.2.0)
       ts-api-utils: 2.5.0(typescript@6.0.3)
@@ -2715,6 +2783,8 @@ snapshots:
   '@typescript-eslint/types@8.69.0': {}
 
   '@typescript-eslint/types@8.70.0': {}
+
+  '@typescript-eslint/types@8.70.1': {}
 
   '@typescript-eslint/typescript-estree@8.69.0(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
@@ -2747,6 +2817,21 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@typescript-eslint/typescript-estree@8.70.1(supports-color@7.2.0)(typescript@6.0.3)':
+    dependencies:
+      '@typescript-eslint/project-service': 8.70.1(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/tsconfig-utils': 8.70.1(typescript@6.0.3)
+      '@typescript-eslint/types': 8.70.1
+      '@typescript-eslint/visitor-keys': 8.70.1
+      debug: 4.4.3(supports-color@7.2.0)
+      minimatch: 10.2.6
+      semver: 7.8.5
+      tinyglobby: 0.2.17
+      ts-api-utils: 2.5.0(typescript@6.0.3)
+      typescript: 6.0.3
+    transitivePeerDependencies:
+      - supports-color
+
   '@typescript-eslint/utils@8.69.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
       '@eslint-community/eslint-utils': 4.10.1(eslint@10.10.0(supports-color@7.2.0))
@@ -2759,12 +2844,12 @@ snapshots:
       - supports-color
     optional: true
 
-  '@typescript-eslint/utils@8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
+  '@typescript-eslint/utils@8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
       '@eslint-community/eslint-utils': 4.10.1(eslint@10.10.0(supports-color@7.2.0))
-      '@typescript-eslint/scope-manager': 8.70.0
-      '@typescript-eslint/types': 8.70.0
-      '@typescript-eslint/typescript-estree': 8.70.0(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/scope-manager': 8.70.1
+      '@typescript-eslint/types': 8.70.1
+      '@typescript-eslint/typescript-estree': 8.70.1(supports-color@7.2.0)(typescript@6.0.3)
       eslint: 10.10.0(supports-color@7.2.0)
       typescript: 6.0.3
     transitivePeerDependencies:
@@ -2778,6 +2863,11 @@ snapshots:
   '@typescript-eslint/visitor-keys@8.70.0':
     dependencies:
       '@typescript-eslint/types': 8.70.0
+      eslint-visitor-keys: 5.0.1
+
+  '@typescript-eslint/visitor-keys@8.70.1':
+    dependencies:
+      '@typescript-eslint/types': 8.70.1
       eslint-visitor-keys: 5.0.1
 
   '@unrs/resolver-binding-android-arm-eabi@1.9.2':
@@ -3276,7 +3366,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-astro@3.2.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@typescript-eslint/parser@8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint-plugin-jsx-a11y@6.10.2(eslint@10.10.0(supports-color@7.2.0)))(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript-eslint@8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)):
+  eslint-plugin-astro@3.2.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@typescript-eslint/parser@8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint-plugin-jsx-a11y@6.10.2(eslint@10.10.0(supports-color@7.2.0)))(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript-eslint@8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)):
     dependencies:
       '@eslint-community/eslint-utils': 4.10.1(eslint@10.10.0(supports-color@7.2.0))
       '@jridgewell/sourcemap-codec': 1.5.0
@@ -3289,9 +3379,9 @@ snapshots:
       postcss-selector-parser: 7.1.6
       synckit: 0.11.13
     optionalDependencies:
-      '@typescript-eslint/parser': 8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/parser': 8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@10.10.0(supports-color@7.2.0))
-      typescript-eslint: 8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
+      typescript-eslint: 8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
@@ -3814,7 +3904,7 @@ snapshots:
 
   node-releases@2.0.54: {}
 
-  node@runtime:26.9.0: {}
+  node@runtime:26.10.0: {}
 
   object-inspect@1.13.3:
     optional: true
@@ -4202,12 +4292,12 @@ snapshots:
       reflect.getprototypeof: 1.0.9
     optional: true
 
-  typescript-eslint@8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3):
+  typescript-eslint@8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.70.0(@typescript-eslint/parser@8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
-      '@typescript-eslint/parser': 8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
-      '@typescript-eslint/typescript-estree': 8.70.0(supports-color@7.2.0)(typescript@6.0.3)
-      '@typescript-eslint/utils': 8.70.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/eslint-plugin': 8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/parser': 8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/typescript-estree': 8.70.1(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.70.1(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
       eslint: 10.10.0(supports-color@7.2.0)
       typescript: 6.0.3
     transitivePeerDependencies:
