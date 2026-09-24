@@ -1,5 +1,5 @@
 ---
-"@hideoo/eslint-config": patch
+"@hideoo/eslint-config": minor
 ---
 
 Updates `typescript-eslint`.
