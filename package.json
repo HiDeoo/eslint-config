@@ -1,6 +1,6 @@
 {
   "name": "@hideoo/eslint-config",
-  "version": "5.2.1",
+  "version": "5.3.0",
   "license": "MIT",
   "description": "HiDeoo's ESLint configuration",
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",

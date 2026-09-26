@@ -1,5 +1,17 @@
 # @hideoo/eslint-config
 
+## 5.3.0
+
+### Minor Changes
+
+- [#608](https://github.com/HiDeoo/eslint-config/pull/608) [`8acb481`](https://github.com/HiDeoo/eslint-config/commit/8acb4812a57d3f69d5e9daeb087b499d6c601b74) Thanks [@renovate](https://github.com/apps/renovate)! - Updates `eslint-plugin-astro`.
+
+- [#615](https://github.com/HiDeoo/eslint-config/pull/615) [`6738c5b`](https://github.com/HiDeoo/eslint-config/commit/6738c5beccbe90e036f99385543f63887ba538d9) Thanks [@renovate](https://github.com/apps/renovate)! - Updates `astro-eslint-parser`.
+
+- [#609](https://github.com/HiDeoo/eslint-config/pull/609) [`b9e0c21`](https://github.com/HiDeoo/eslint-config/commit/b9e0c217bd901478c680f5661c6f0b88e00e52e1) Thanks [@renovate](https://github.com/apps/renovate)! - Updates `eslint-plugin-unicorn`.
+
+- [#613](https://github.com/HiDeoo/eslint-config/pull/613) [`4f3c6a2`](https://github.com/HiDeoo/eslint-config/commit/4f3c6a2082b451c329dba0b3b742c342d0403eac) Thanks [@renovate](https://github.com/apps/renovate)! - Updates `typescript-eslint`.
+
 ## 5.2.1
 
 ### Patch Changes
