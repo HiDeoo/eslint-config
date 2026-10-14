@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:recommended",
     ":disableDependencyDashboard",
     ":disableDevDependencies",
     ":disablePeerDependencies",
@@ -12,5 +12,11 @@
     ":separatePatchReleases"
   ],
   "ignoreDeps": ["pnpm"],
-  "minimumReleaseAge": "1 day"
+  "minimumReleaseAge": "1 day",
+  "packageRules": [
+    {
+      "matchDepTypes": ["devEngines.runtime"],
+      "enabled": false
+    }
+  ]
 }
