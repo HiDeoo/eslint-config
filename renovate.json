@@ -12,5 +12,11 @@
     ":separatePatchReleases"
   ],
   "ignoreDeps": ["pnpm"],
-  "minimumReleaseAge": "1 day"
+  "minimumReleaseAge": "1 day",
+  "packageRules": [
+    {
+      "matchDepTypes": ["devEngines.runtime"],
+      "enabled": false
+    }
+  ]
 }
