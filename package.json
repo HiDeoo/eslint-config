@@ -35,7 +35,7 @@
     "eslint-plugin-unicorn": "80.0.0",
     "globals": "17.14.0",
     "local-pkg": "2.0.0",
-    "typescript-eslint": "8.73.0"
+    "typescript-eslint": "8.74.0"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^1.0.1",
