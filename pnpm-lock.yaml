@@ -119,8 +119,8 @@ importers:
         specifier: 2.4.0
         version: 2.4.0(eslint@10.10.0(supports-color@7.2.0))
       eslint-config-prettier:
-        specifier: 10.1.8
-        version: 10.1.8(eslint@10.10.0(supports-color@7.2.0))
+        specifier: 10.1.9
+        version: 10.1.9(eslint@10.10.0(supports-color@7.2.0))
       eslint-import-resolver-typescript:
         specifier: 4.4.5
         version: 4.4.5(eslint-plugin-import-x@4.18.1(@typescript-eslint/utils@8.69.0(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0))(eslint@10.10.0(supports-color@7.2.0))(supports-color@7.2.0)
@@ -1226,8 +1226,8 @@ packages:
     peerDependencies:
       eslint: ^9.5.0 || ^10.0.0
 
-  eslint-config-prettier@10.1.8:
-    resolution: {integrity: sha512-82GZUjRS0p/jganf6q1rEO25VSoHH0hKPCTrgillPjdI/3bgBhAE1QzHrHTizjpRvy6pGAvKjDJtk2pF9NDq8w==}
+  eslint-config-prettier@10.1.9:
+    resolution: {integrity: sha512-JnOR0K4u67CWOiSS3vaduGlLUWS32lGiyglMIV6AyvK9DBRpS+QhR2ESKaUe2eWGRsdVmrxy77yaOk2hzDa4Bg==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -3282,7 +3282,7 @@ snapshots:
       '@eslint/compat': 2.1.0(eslint@10.10.0(supports-color@7.2.0))
       eslint: 10.10.0(supports-color@7.2.0)
 
-  eslint-config-prettier@10.1.8(eslint@10.10.0(supports-color@7.2.0)):
+  eslint-config-prettier@10.1.9(eslint@10.10.0(supports-color@7.2.0)):
     dependencies:
       eslint: 10.10.0(supports-color@7.2.0)
 
